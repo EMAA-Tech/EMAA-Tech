@@ -1,0 +1,87 @@
+\\peterborough.ac.uk\mfi\dfsAdUserdata\HChadwic\Visual Studio 2010\Projects\PatientMonitor\PatientMonitor\bin\Debug\PatientMonitor.exe
+\\peterborough.ac.uk\mfi\dfsAdUserdata\HChadwic\Visual Studio 2010\Projects\PatientMonitor\PatientMonitor\bin\Debug\PatientMonitor.pdb
+\\peterborough.ac.uk\mfi\dfsAdUserdata\HChadwic\Visual Studio 2010\Projects\PatientMonitor\PatientMonitor\bin\Debug\nunit.framework.dll
+\\peterborough.ac.uk\mfi\dfsAdUserdata\HChadwic\Visual Studio 2010\Projects\PatientMonitor\PatientMonitor\bin\Debug\nunit.framework.xml
+\\peterborough.ac.uk\mfi\dfsAdUserdata\HChadwic\Visual Studio 2010\Projects\PatientMonitor\PatientMonitor\obj\x86\Debug\ResolveAssemblyReference.cache
+\\peterborough.ac.uk\mfi\dfsAdUserdata\HChadwic\Visual Studio 2010\Projects\PatientMonitor\PatientMonitor\obj\x86\Debug\MainWindow.baml
+\\peterborough.ac.uk\mfi\dfsAdUserdata\HChadwic\Visual Studio 2010\Projects\PatientMonitor\PatientMonitor\obj\x86\Debug\MainWindow.g.cs
+\\peterborough.ac.uk\mfi\dfsAdUserdata\HChadwic\Visual Studio 2010\Projects\PatientMonitor\PatientMonitor\obj\x86\Debug\App.g.cs
+\\peterborough.ac.uk\mfi\dfsAdUserdata\HChadwic\Visual Studio 2010\Projects\PatientMonitor\PatientMonitor\obj\x86\Debug\PatientMonitor_MarkupCompile.cache
+\\peterborough.ac.uk\mfi\dfsAdUserdata\HChadwic\Visual Studio 2010\Projects\PatientMonitor\PatientMonitor\obj\x86\Debug\PatientMonitor.g.resources
+\\peterborough.ac.uk\mfi\dfsAdUserdata\HChadwic\Visual Studio 2010\Projects\PatientMonitor\PatientMonitor\obj\x86\Debug\PatientMonitor.Properties.Resources.resources
+\\peterborough.ac.uk\mfi\dfsAdUserdata\HChadwic\Visual Studio 2010\Projects\PatientMonitor\PatientMonitor\obj\x86\Debug\GenerateResource.read.1.tlog
+\\peterborough.ac.uk\mfi\dfsAdUserdata\HChadwic\Visual Studio 2010\Projects\PatientMonitor\PatientMonitor\obj\x86\Debug\GenerateResource.write.1.tlog
+\\peterborough.ac.uk\mfi\dfsAdUserdata\HChadwic\Visual Studio 2010\Projects\PatientMonitor\PatientMonitor\obj\x86\Debug\PatientMonitor.exe
+\\peterborough.ac.uk\mfi\dfsAdUserdata\HChadwic\Visual Studio 2010\Projects\PatientMonitor\PatientMonitor\obj\x86\Debug\PatientMonitor.pdb
+C:\Development\PatientMonitor\PatientMonitor\bin\Debug\PatientMonitor.exe
+C:\Development\PatientMonitor\PatientMonitor\bin\Debug\PatientMonitor.pdb
+C:\Development\PatientMonitor\PatientMonitor\bin\Debug\nunit.framework.dll
+C:\Development\PatientMonitor\PatientMonitor\bin\Debug\nunit.framework.xml
+C:\Development\PatientMonitor\PatientMonitor\obj\x86\Debug\MainWindow.baml
+C:\Development\PatientMonitor\PatientMonitor\obj\x86\Debug\MainWindow.g.cs
+C:\Development\PatientMonitor\PatientMonitor\obj\x86\Debug\App.g.cs
+C:\Development\PatientMonitor\PatientMonitor\obj\x86\Debug\PatientMonitor_MarkupCompile.cache
+C:\Development\PatientMonitor\PatientMonitor\obj\x86\Debug\PatientMonitor.g.resources
+C:\Development\PatientMonitor\PatientMonitor\obj\x86\Debug\PatientMonitor.Properties.Resources.resources
+C:\Development\PatientMonitor\PatientMonitor\obj\x86\Debug\PatientMonitor.exe
+C:\Development\PatientMonitor\PatientMonitor\obj\x86\Debug\PatientMonitor.pdb
+C:\Development\PatientMonitor\PatientMonitor\bin\Debug\TAlex.WPF.Controls.dll
+C:\Development\PatientMonitor\PatientMonitor\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Development\PatientMonitor\PatientMonitor\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Development\PatientMonitor\PatientMonitor\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Development\PatientMonitor\PatientMonitor\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Development\PatientMonitor\PatientMonitor\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Development\PatientMonitor\PatientMonitor\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Development\PatientMonitor\PatientMonitor\bin\Debug\TAlex.WPF.Controls.xml
+C:\Development\PatientMonitor\PatientMonitor\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Development\PatientMonitor\PatientMonitor\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Development\PatientMonitor\PatientMonitor\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Development\PatientMonitor\PatientMonitor\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Development\PatientMonitor\PatientMonitor\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Development\PatientMonitor\PatientMonitor\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Development\PatientMonitor\PatientMonitor\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Development\PatientMonitor\PatientMonitor\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Development\PatientMonitor\PatientMonitor\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Development\PatientMonitor\PatientMonitor\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Development\PatientMonitor\PatientMonitor\obj\x86\Debug\UpDown.baml
+C:\Development\PatientMonitor\PatientMonitor\obj\x86\Debug\UpDown.g.cs
+C:\Development\PatientMonitor\PatientMonitor\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Development\PatientMonitor\PatientMonitor\obj\x86\Debug\PatientMonitor_MarkupCompile.lref
+C:\Development\PatientMonitor\PatientMonitor\obj\x86\Debug\PatientMonitor.csprojResolveAssemblyReference.cache
+C:\Development\PatientMonitor\PatientMonitor\obj\x86\Debug\PatientMonitor.csproj.GenerateResource.Cache
+C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\obj\x86\Debug\PatientMonitor.exe
+C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\obj\x86\Debug\PatientMonitor.pdb
+C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\bin\Debug\PatientMonitor.exe
+C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\bin\Debug\PatientMonitor.pdb
+C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\bin\Debug\nunit.framework.dll
+C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\bin\Debug\TAlex.WPF.Controls.dll
+C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\bin\Debug\nunit.framework.xml
+C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\bin\Debug\TAlex.WPF.Controls.xml
+C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\obj\x86\Debug\PatientMonitor.csprojResolveAssemblyReference.cache
+C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\obj\x86\Debug\UpDown.baml
+C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\obj\x86\Debug\MainWindow.g.cs
+C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\obj\x86\Debug\UpDown.g.cs
+C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\obj\x86\Debug\App.g.cs
+C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\obj\x86\Debug\PatientMonitor_MarkupCompile.cache
+C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\obj\x86\Debug\PatientMonitor_MarkupCompile.lref
+C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\obj\x86\Debug\MainWindow.baml
+C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\obj\x86\Debug\PatientMonitor.g.resources
+C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\obj\x86\Debug\PatientMonitor.Properties.Resources.resources
+C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\obj\x86\Debug\PatientMonitor.csproj.GenerateResource.Cache

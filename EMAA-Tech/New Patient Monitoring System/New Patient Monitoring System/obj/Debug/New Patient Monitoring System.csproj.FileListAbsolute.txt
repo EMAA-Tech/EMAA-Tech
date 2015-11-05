@@ -1,1 +1,0 @@
-c:\users\mwool\documents\visual studio 2015\Projects\New Patient Monitoring System\New Patient Monitoring System\bin\Debug\New Patient Monitoring System.exe.config

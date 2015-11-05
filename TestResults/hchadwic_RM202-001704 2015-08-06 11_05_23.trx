@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="f66ceb1b-b38a-413b-aab5-95855946522f" name="hchadwic@RM202-001704 2015-08-06 11:05:23" runUser="PETERBOROUGH\hchadwic" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="e0c611b3-dc4e-465e-a29c-bf8e707bdb42">
+    <Deployment runDeploymentRoot="hchadwic_RM202-001704 2015-08-06 11_05_23">
+      <DeploymentItem filename="C:\Development\PatientMonitor\PatientMonitor\bin\Debug\PatientMonitor.exe" />
+      <DeploymentItem filename="C:\Development\PatientMonitor\packages\NUnit.2.6.4\lib\nunit.framework.dll" />
+      <DeploymentItem filename="C:\Development\PatientMonitor\packages\Moq.4.2.1507.0118\lib\net40\Moq.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2015-08-06T11:05:23.8905207+01:00" queuing="2015-08-06T11:05:26.9329207+01:00" start="2015-08-06T11:05:27.0577207+01:00" finish="2015-08-06T11:05:28.6177207+01:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="15" executed="15" passed="14" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="GoodUnconnectedCreation" storage="c:\development\patientmonitor\testpatientmonitor\bin\debug\testpatientmonitor.dll" id="88c17d4a-0b33-1c42-10ef-2f17c34ca311">
+      <Execution id="e377ed35-a199-448b-8d45-fec28605ce1c" />
+      <TestMethod codeBase="C:/Development/PatientMonitor/TestPatientMonitor/bin/Debug/TestPatientMonitor.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PatientMonitorTest.TestPatientDataReader, TestPatientMonitor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GoodUnconnectedCreation" />
+    </UnitTest>
+    <UnitTest name="TemperatureEventWasCalled" storage="c:\development\patientmonitor\testpatientmonitor\bin\debug\testpatientmonitor.dll" id="9b1e7a45-5c43-67c5-ee8c-54d6d42286d7">
+      <Execution id="88d3185a-0e8c-4106-90e9-63e51ad8db06" />
+      <TestMethod codeBase="C:/Development/PatientMonitor/TestPatientMonitor/bin/Debug/TestPatientMonitor.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestMethodPMS.TestPatientAlarmer, TestPatientMonitor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TemperatureEventWasCalled" />
+    </UnitTest>
+    <UnitTest name="NoEventsCalled" storage="c:\development\patientmonitor\testpatientmonitor\bin\debug\testpatientmonitor.dll" id="9fa2213f-1a7c-0891-71d9-fafe28b7beb5">
+      <Execution id="19187172-44ca-4aef-9bc4-515910625ed4" />
+      <TestMethod codeBase="C:/Development/PatientMonitor/TestPatientMonitor/bin/Debug/TestPatientMonitor.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestMethodPMS.TestPatientAlarmer, TestPatientMonitor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NoEventsCalled" />
+    </UnitTest>
+    <UnitTest name="patientDataCreatedCorrectly" storage="c:\development\patientmonitor\testpatientmonitor\bin\debug\testpatientmonitor.dll" id="ebf625eb-7cab-05e1-0fd4-88e7d418e1e3">
+      <Execution id="4dd818de-78e3-4e66-b427-0f04adfde0e1" />
+      <TestMethod codeBase="C:/Development/PatientMonitor/TestPatientMonitor/bin/Debug/TestPatientMonitor.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PatientMonitorTest.TestPatientData, TestPatientMonitor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="patientDataCreatedCorrectly" />
+    </UnitTest>
+    <UnitTest name="GoodCreation" storage="c:\development\patientmonitor\testpatientmonitor\bin\debug\testpatientmonitor.dll" id="57444592-0eac-a26b-2f64-d9616e259025">
+      <Execution id="0cf0204a-283d-4c41-9db0-1d00c2fb958f" />
+      <TestMethod codeBase="C:/Development/PatientMonitor/TestPatientMonitor/bin/Debug/TestPatientMonitor.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PatientMonitorTest.TestPatientDataReader, TestPatientMonitor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GoodCreation" />
+    </UnitTest>
+    <UnitTest name="pulseRateRateEventWasCalled" storage="c:\development\patientmonitor\testpatientmonitor\bin\debug\testpatientmonitor.dll" id="67b263d0-3e19-2161-4c93-3cdeada2d56e">
+      <Execution id="172022c6-f3d0-4468-9109-cefaa30bf112" />
+      <TestMethod codeBase="C:/Development/PatientMonitor/TestPatientMonitor/bin/Debug/TestPatientMonitor.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestMethodPMS.TestPatientAlarmer, TestPatientMonitor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="pulseRateRateEventWasCalled" />
+    </UnitTest>
+    <UnitTest name="BadFileName" storage="c:\development\patientmonitor\testpatientmonitor\bin\debug\testpatientmonitor.dll" id="b56e6885-fa6f-2463-78db-28dc70da0b21">
+      <Execution id="18117256-fcfb-4bd8-8ff2-45ce7dc1beed" />
+      <TestMethod codeBase="C:/Development/PatientMonitor/TestPatientMonitor/bin/Debug/TestPatientMonitor.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PatientMonitorTest.TestPatientDataReader, TestPatientMonitor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="BadFileName" />
+    </UnitTest>
+    <UnitTest name="SystolicBloodPressureAlarmEventWasCalled" storage="c:\development\patientmonitor\testpatientmonitor\bin\debug\testpatientmonitor.dll" id="04d3d40f-7d4b-3f65-303b-71bfd1df0636">
+      <Execution id="6a7e08dd-1a5d-4de7-a594-3987fa324480" />
+      <TestMethod codeBase="C:/Development/PatientMonitor/TestPatientMonitor/bin/Debug/TestPatientMonitor.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestMethodPMS.TestPatientAlarmer, TestPatientMonitor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SystolicBloodPressureAlarmEventWasCalled" />
+    </UnitTest>
+    <UnitTest name="alarmInLimits" storage="c:\development\patientmonitor\testpatientmonitor\bin\debug\testpatientmonitor.dll" id="72d3863b-9205-0883-93f3-14a9e3c98a55">
+      <Execution id="fa28c4aa-f345-44f5-9057-beef8ff761bb" />
+      <TestMethod codeBase="C:/Development/PatientMonitor/TestPatientMonitor/bin/Debug/TestPatientMonitor.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PatientMonitorTest.TestAlarmTester, TestPatientMonitor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="alarmInLimits" />
+    </UnitTest>
+    <UnitTest name="BadUnconnectedFileName" storage="c:\development\patientmonitor\testpatientmonitor\bin\debug\testpatientmonitor.dll" id="5046feed-f315-e681-144c-87cbb60941a8">
+      <Execution id="09abe8e5-e75a-49d2-a8fa-36c9ed80c1bc" />
+      <TestMethod codeBase="C:/Development/PatientMonitor/TestPatientMonitor/bin/Debug/TestPatientMonitor.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PatientMonitorTest.TestPatientDataReader, TestPatientMonitor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="BadUnconnectedFileName" />
+    </UnitTest>
+    <UnitTest name="patientDataSetCorrectly" storage="c:\development\patientmonitor\testpatientmonitor\bin\debug\testpatientmonitor.dll" id="cb000bdc-c477-d191-833b-22f831a12fb1">
+      <Execution id="4ab80820-8d37-4dfe-af44-0fa7187497a9" />
+      <TestMethod codeBase="C:/Development/PatientMonitor/TestPatientMonitor/bin/Debug/TestPatientMonitor.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PatientMonitorTest.TestPatientData, TestPatientMonitor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="patientDataSetCorrectly" />
+    </UnitTest>
+    <UnitTest name="breathingRateEventWasCalled" storage="c:\development\patientmonitor\testpatientmonitor\bin\debug\testpatientmonitor.dll" id="0da15e40-4714-ec34-2249-e3c631cbd429">
+      <Execution id="5a469c2f-5b63-4bbd-8ed3-a7b374e4ef6e" />
+      <TestMethod codeBase="C:/Development/PatientMonitor/TestPatientMonitor/bin/Debug/TestPatientMonitor.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestMethodPMS.TestPatientAlarmer, TestPatientMonitor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="breathingRateEventWasCalled" />
+    </UnitTest>
+    <UnitTest name="OutsideLimits" storage="c:\development\patientmonitor\testpatientmonitor\bin\debug\testpatientmonitor.dll" id="0ab21f97-c05a-1f4d-9da4-ab34763e4aec">
+      <Execution id="f9d0c1f2-11f5-40a5-a6f9-817b24d72d30" />
+      <TestMethod codeBase="C:/Development/PatientMonitor/TestPatientMonitor/bin/Debug/TestPatientMonitor.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PatientMonitorTest.TestAlarmTester, TestPatientMonitor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="OutsideLimits" />
+    </UnitTest>
+    <UnitTest name="alarmTesterGoodCreation" storage="c:\development\patientmonitor\testpatientmonitor\bin\debug\testpatientmonitor.dll" id="c45731a3-2b6a-f241-8df9-b4b2e356ae35">
+      <Execution id="fb27e902-fc86-4889-838a-24f7cc39b8c3" />
+      <TestMethod codeBase="C:/Development/PatientMonitor/TestPatientMonitor/bin/Debug/TestPatientMonitor.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PatientMonitorTest.TestAlarmTester, TestPatientMonitor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="alarmTesterGoodCreation" />
+    </UnitTest>
+    <UnitTest name="DiastolicBloodPressureEventWasCalled" storage="c:\development\patientmonitor\testpatientmonitor\bin\debug\testpatientmonitor.dll" id="1de0e9f8-f382-bc13-9c63-8b1a79800b59">
+      <Execution id="63cc4464-95c9-4177-9800-770e35604007" />
+      <TestMethod codeBase="C:/Development/PatientMonitor/TestPatientMonitor/bin/Debug/TestPatientMonitor.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestMethodPMS.TestPatientAlarmer, TestPatientMonitor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DiastolicBloodPressureEventWasCalled" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="04d3d40f-7d4b-3f65-303b-71bfd1df0636" executionId="6a7e08dd-1a5d-4de7-a594-3987fa324480" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0ab21f97-c05a-1f4d-9da4-ab34763e4aec" executionId="f9d0c1f2-11f5-40a5-a6f9-817b24d72d30" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0da15e40-4714-ec34-2249-e3c631cbd429" executionId="5a469c2f-5b63-4bbd-8ed3-a7b374e4ef6e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1de0e9f8-f382-bc13-9c63-8b1a79800b59" executionId="63cc4464-95c9-4177-9800-770e35604007" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5046feed-f315-e681-144c-87cbb60941a8" executionId="09abe8e5-e75a-49d2-a8fa-36c9ed80c1bc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="57444592-0eac-a26b-2f64-d9616e259025" executionId="0cf0204a-283d-4c41-9db0-1d00c2fb958f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="67b263d0-3e19-2161-4c93-3cdeada2d56e" executionId="172022c6-f3d0-4468-9109-cefaa30bf112" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="72d3863b-9205-0883-93f3-14a9e3c98a55" executionId="fa28c4aa-f345-44f5-9057-beef8ff761bb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="88c17d4a-0b33-1c42-10ef-2f17c34ca311" executionId="e377ed35-a199-448b-8d45-fec28605ce1c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9b1e7a45-5c43-67c5-ee8c-54d6d42286d7" executionId="88d3185a-0e8c-4106-90e9-63e51ad8db06" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9fa2213f-1a7c-0891-71d9-fafe28b7beb5" executionId="19187172-44ca-4aef-9bc4-515910625ed4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b56e6885-fa6f-2463-78db-28dc70da0b21" executionId="18117256-fcfb-4bd8-8ff2-45ce7dc1beed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c45731a3-2b6a-f241-8df9-b4b2e356ae35" executionId="fb27e902-fc86-4889-838a-24f7cc39b8c3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cb000bdc-c477-d191-833b-22f831a12fb1" executionId="4ab80820-8d37-4dfe-af44-0fa7187497a9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ebf625eb-7cab-05e1-0fd4-88e7d418e1e3" executionId="4dd818de-78e3-4e66-b427-0f04adfde0e1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="6a7e08dd-1a5d-4de7-a594-3987fa324480" testId="04d3d40f-7d4b-3f65-303b-71bfd1df0636" testName="SystolicBloodPressureAlarmEventWasCalled" computerName="RM202-001704" duration="00:00:00.4421006" startTime="2015-08-06T11:05:27.1201207+01:00" endTime="2015-08-06T11:05:28.2589207+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6a7e08dd-1a5d-4de7-a594-3987fa324480">
+    </UnitTestResult>
+    <UnitTestResult executionId="f9d0c1f2-11f5-40a5-a6f9-817b24d72d30" testId="0ab21f97-c05a-1f4d-9da4-ab34763e4aec" testName="OutsideLimits" computerName="RM202-001704" duration="00:00:00.0004828" startTime="2015-08-06T11:05:28.2745207+01:00" endTime="2015-08-06T11:05:28.2745207+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f9d0c1f2-11f5-40a5-a6f9-817b24d72d30">
+    </UnitTestResult>
+    <UnitTestResult executionId="5a469c2f-5b63-4bbd-8ed3-a7b374e4ef6e" testId="0da15e40-4714-ec34-2249-e3c631cbd429" testName="breathingRateEventWasCalled" computerName="RM202-001704" duration="00:00:00.0132341" startTime="2015-08-06T11:05:28.2745207+01:00" endTime="2015-08-06T11:05:28.2901207+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5a469c2f-5b63-4bbd-8ed3-a7b374e4ef6e">
+    </UnitTestResult>
+    <UnitTestResult executionId="63cc4464-95c9-4177-9800-770e35604007" testId="1de0e9f8-f382-bc13-9c63-8b1a79800b59" testName="DiastolicBloodPressureEventWasCalled" computerName="RM202-001704" duration="00:00:00.0043175" startTime="2015-08-06T11:05:28.3057207+01:00" endTime="2015-08-06T11:05:28.3057207+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="63cc4464-95c9-4177-9800-770e35604007">
+    </UnitTestResult>
+    <UnitTestResult executionId="09abe8e5-e75a-49d2-a8fa-36c9ed80c1bc" testId="5046feed-f315-e681-144c-87cbb60941a8" testName="BadUnconnectedFileName" computerName="RM202-001704" duration="00:00:00.0068103" startTime="2015-08-06T11:05:28.3057207+01:00" endTime="2015-08-06T11:05:28.3213207+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="09abe8e5-e75a-49d2-a8fa-36c9ed80c1bc">
+    </UnitTestResult>
+    <UnitTestResult executionId="0cf0204a-283d-4c41-9db0-1d00c2fb958f" testId="57444592-0eac-a26b-2f64-d9616e259025" testName="GoodCreation" computerName="RM202-001704" duration="00:00:00.0013033" startTime="2015-08-06T11:05:28.3369207+01:00" endTime="2015-08-06T11:05:28.3369207+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0cf0204a-283d-4c41-9db0-1d00c2fb958f">
+    </UnitTestResult>
+    <UnitTestResult executionId="172022c6-f3d0-4468-9109-cefaa30bf112" testId="67b263d0-3e19-2161-4c93-3cdeada2d56e" testName="pulseRateRateEventWasCalled" computerName="RM202-001704" duration="00:00:00.0044357" startTime="2015-08-06T11:05:28.3369207+01:00" endTime="2015-08-06T11:05:28.3525207+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="172022c6-f3d0-4468-9109-cefaa30bf112">
+    </UnitTestResult>
+    <UnitTestResult executionId="fa28c4aa-f345-44f5-9057-beef8ff761bb" testId="72d3863b-9205-0883-93f3-14a9e3c98a55" testName="alarmInLimits" computerName="RM202-001704" duration="00:00:00.0003316" startTime="2015-08-06T11:05:28.3525207+01:00" endTime="2015-08-06T11:05:28.3525207+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fa28c4aa-f345-44f5-9057-beef8ff761bb">
+    </UnitTestResult>
+    <UnitTestResult executionId="e377ed35-a199-448b-8d45-fec28605ce1c" testId="88c17d4a-0b33-1c42-10ef-2f17c34ca311" testName="GoodUnconnectedCreation" computerName="RM202-001704" duration="00:00:00.0008018" startTime="2015-08-06T11:05:28.3681207+01:00" endTime="2015-08-06T11:05:28.3681207+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e377ed35-a199-448b-8d45-fec28605ce1c">
+    </UnitTestResult>
+    <UnitTestResult executionId="88d3185a-0e8c-4106-90e9-63e51ad8db06" testId="9b1e7a45-5c43-67c5-ee8c-54d6d42286d7" testName="TemperatureEventWasCalled" computerName="RM202-001704" duration="00:00:00.0044533" startTime="2015-08-06T11:05:28.3681207+01:00" endTime="2015-08-06T11:05:28.3837207+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="88d3185a-0e8c-4106-90e9-63e51ad8db06">
+    </UnitTestResult>
+    <UnitTestResult executionId="19187172-44ca-4aef-9bc4-515910625ed4" testId="9fa2213f-1a7c-0891-71d9-fafe28b7beb5" testName="NoEventsCalled" computerName="RM202-001704" duration="00:00:00.0047151" startTime="2015-08-06T11:05:28.3837207+01:00" endTime="2015-08-06T11:05:28.3993207+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="19187172-44ca-4aef-9bc4-515910625ed4">
+    </UnitTestResult>
+    <UnitTestResult executionId="18117256-fcfb-4bd8-8ff2-45ce7dc1beed" testId="b56e6885-fa6f-2463-78db-28dc70da0b21" testName="BadFileName" computerName="RM202-001704" duration="00:00:00.0007671" startTime="2015-08-06T11:05:28.3993207+01:00" endTime="2015-08-06T11:05:28.3993207+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="18117256-fcfb-4bd8-8ff2-45ce7dc1beed">
+    </UnitTestResult>
+    <UnitTestResult executionId="fb27e902-fc86-4889-838a-24f7cc39b8c3" testId="c45731a3-2b6a-f241-8df9-b4b2e356ae35" testName="alarmTesterGoodCreation" computerName="RM202-001704" duration="00:00:00.0015178" startTime="2015-08-06T11:05:28.4149207+01:00" endTime="2015-08-06T11:05:28.4149207+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fb27e902-fc86-4889-838a-24f7cc39b8c3">
+    </UnitTestResult>
+    <UnitTestResult executionId="4ab80820-8d37-4dfe-af44-0fa7187497a9" testId="cb000bdc-c477-d191-833b-22f831a12fb1" testName="patientDataSetCorrectly" computerName="RM202-001704" duration="00:00:00.0802057" startTime="2015-08-06T11:05:28.4149207+01:00" endTime="2015-08-06T11:05:28.5085207+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4ab80820-8d37-4dfe-af44-0fa7187497a9">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;60&gt;. Actual:&lt;62&gt;. </Message>
+          <StackTrace>   at PatientMonitorTest.TestPatientData.patientDataTestOK1(PatientData pd) in C:\Development\PatientMonitor\TestPatientMonitor\TestPatientData.cs:line 36
+   at PatientMonitorTest.TestPatientData.patientDataSetCorrectly() in C:\Development\PatientMonitor\TestPatientMonitor\TestPatientData.cs:line 31
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4dd818de-78e3-4e66-b427-0f04adfde0e1" testId="ebf625eb-7cab-05e1-0fd4-88e7d418e1e3" testName="patientDataCreatedCorrectly" computerName="RM202-001704" duration="00:00:00.0017190" startTime="2015-08-06T11:05:28.5085207+01:00" endTime="2015-08-06T11:05:28.5397207+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4dd818de-78e3-4e66-b427-0f04adfde0e1">
+    </UnitTestResult>
+  </Results>
+</TestRun>
