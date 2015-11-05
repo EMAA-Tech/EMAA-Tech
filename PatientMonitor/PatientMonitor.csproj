@@ -87,14 +87,34 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="BedsideMonitoring.xaml.cs">
+      <DependentUpon>BedsideMonitoring.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CentralMonitroingSystem.xaml.cs">
+      <DependentUpon>CentralMonitroingSystem.xaml</DependentUpon>
+    </Compile>
     <Compile Include="IPatientData.cs" />
     <Compile Include="IPatientFactory.cs" />
+    <Compile Include="MainWindowInterface.xaml.cs">
+      <DependentUpon>MainWindowInterface.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="monitoringandalarmdetails.xaml.cs">
+      <DependentUpon>monitoringandalarmdetails.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PatientClassesEnumeration.cs" />
     <Compile Include="PatientMonitoringController.cs" />
     <Compile Include="PatientFactory.cs" />
     <Compile Include="UpDown.xaml.cs">
       <DependentUpon>UpDown.xaml</DependentUpon>
     </Compile>
+    <Page Include="BedsideMonitoring.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CentralMonitroingSystem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -109,6 +129,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="MainWindowInterface.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="monitoringandalarmdetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UpDown.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
