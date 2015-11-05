@@ -85,3 +85,21 @@ C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\obj\x86\Debug\MainWindow.ba
 C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\obj\x86\Debug\PatientMonitor.g.resources
 C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\obj\x86\Debug\PatientMonitor.Properties.Resources.resources
 C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\obj\x86\Debug\PatientMonitor.csproj.GenerateResource.Cache
+H:\My Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\PatientMonitor.exe
+H:\My Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\PatientMonitor.pdb
+H:\My Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\PatientMonitor.csprojResolveAssemblyReference.cache
+H:\My Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\monitoringandalarmdetails.baml
+H:\My Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\UpDown.baml
+H:\My Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\BedsideMonitoring.g.cs
+H:\My Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\CentralMonitroingSystem.g.cs
+H:\My Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\MainWindow.g.cs
+H:\My Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\MainWindowInterface.g.cs
+H:\My Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\monitoringandalarmdetails.g.cs
+H:\My Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\UpDown.g.cs
+H:\My Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\App.g.cs
+H:\My Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+H:\My Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\PatientMonitor_MarkupCompile.cache
+H:\My Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\PatientMonitor_MarkupCompile.lref
+H:\My Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\CentralMonitroingSystem.baml
+H:\My Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\MainWindowInterface.baml
+H:\My Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\BedsideMonitoring.baml

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\obj\x86\Debug\
+H:\My Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\
 PatientMonitor
 none
 false
 DEBUG;TRACE
-C:\Users\adobr\Desktop\PatientMonitor\PatientMonitor\App.xaml
-2-524991215
+H:\My Documents\GitHub\EMAA-Tech\PatientMonitor\App.xaml
+61545623597
 
-16248070441
-20-1887288000
-MainWindow.xaml;UpDown.xaml;
+20-2074102309
+202018931457
+BedsideMonitoring.xaml;CentralMonitroingSystem.xaml;MainWindow.xaml;MainWindowInterface.xaml;monitoringandalarmdetails.xaml;UpDown.xaml;
 
-False
+True
 
