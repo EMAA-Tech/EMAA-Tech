@@ -103,3 +103,47 @@ H:\My Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\PatientMonitor_Mar
 H:\My Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\CentralMonitroingSystem.baml
 H:\My Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\MainWindowInterface.baml
 H:\My Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\BedsideMonitoring.baml
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\PatientMonitor.exe
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\PatientMonitor.csprojResolveAssemblyReference.cache
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\BedsideMonitoring.baml
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\CentralMonitroingSystem.baml
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\MainWindowInterface.baml
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\monitoringandalarmdetails.baml
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\UpDown.baml
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\BedsideMonitoring.g.cs
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\CentralMonitroingSystem.g.cs
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\MainWindow.g.cs
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\MainWindowInterface.g.cs
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\monitoringandalarmdetails.g.cs
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\UpDown.g.cs
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\App.g.cs
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\PatientMonitor_MarkupCompile.cache
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\PatientMonitor_MarkupCompile.lref
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\bin\Debug\PatientMonitor.exe
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\bin\Debug\PatientMonitor.pdb
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\bin\Debug\nunit.framework.dll
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\bin\Debug\TAlex.WPF.Controls.dll
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\bin\Debug\nunit.framework.xml
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\bin\Debug\TAlex.WPF.Controls.xml
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\MainWindow.baml
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\PatientMonitor.g.resources
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\PatientMonitor.Properties.Resources.resources
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\PatientMonitor.csproj.GenerateResource.Cache
+C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\PatientMonitor.pdb
