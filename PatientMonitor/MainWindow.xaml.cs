@@ -9,38 +9,24 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Media;
 
 namespace PatientMonitor
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for MainWindowInterface.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindowInterface : Window
     {
-        SoundPlayer mutable = new SoundPlayer(PatientMonitor.Properties.Resources.Mutable);
-        SoundPlayer nonMutable = new SoundPlayer(PatientMonitor.Properties.Resources.NonMutable);
-
-        public MainWindow()
+        public MainWindowInterface()
         {
             InitializeComponent();
-            PatientFactory factory = new PatientFactory();
-            PatientMonitoringController controller = new PatientMonitoringController(this, factory);
-            controller.RunMonitor();
         }
 
-        public void soundMutableAlarm()
+        private void btnCentralStation_Click(object sender, RoutedEventArgs e)
         {
-            mutable.Stop();
-            mutable.Play();
-        }
-
-        public void soundNonMutableAlarm()
-        {
-            nonMutable.Stop();
-            nonMutable.Play();
+            MainWindow mainInterface = new MainWindow();
+            mainInterface.Show();
         }
     }
 }

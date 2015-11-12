@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Threading;
 
@@ -36,7 +37,6 @@ namespace PatientMonitor
         {
             _patientFactory = patientFactory;
             _mainWindow = window;
-
 
             _pulseRate = _mainWindow.pulseRate;
             _breathingRate = _mainWindow.breathingRate;
@@ -109,17 +109,15 @@ namespace PatientMonitor
             setupComponents();
             newPatientSelected();
 
-            setupUI();
-
         }
-
         void setupUI()
         {
             //_mainWindow.patientSelector.SelectionChanged
             //    += new System.Windows.Controls.SelectionChangedEventHandler(newPatientSelected);
 
-            //sets the uper and lower alarm levels (displays deafults and saves them when changed)
-            /// Patient1
+            //monitoringandalarmdetails monitoring = new monitoringandalarmdetails();
+            //monitoring.heartRateLower.AlarmValue = (int)DefaultSettings.LOWER_PULSE_RATE;
+
             //_mainWindow.heartRateLower.AlarmValue = (int)DefaultSettings.LOWER_PULSE_RATE;
             //_mainWindow.breathingRateLower.AlarmValue = (int)DefaultSettings.LOWER_BREATHING_RATE;
             //_mainWindow.temperatureLower.AlarmValue = (int)DefaultSettings.LOWER_TEMPERATURE;
@@ -144,86 +142,13 @@ namespace PatientMonitor
             //_mainWindow.systolicUpper.ValueChanged += new EventHandler(limitsChanged);
             //_mainWindow.diastolicUpper.ValueChanged += new EventHandler(limitsChanged);
 
-            ///// Patient2
-            //_mainWindow.heartRateLower1.AlarmValue = (int)DefaultSettings.LOWER_PULSE_RATE;
-            //_mainWindow.breathingRateLower1.AlarmValue = (int)DefaultSettings.LOWER_BREATHING_RATE;
-            //_mainWindow.temperatureLower1.AlarmValue = (int)DefaultSettings.LOWER_TEMPERATURE;
-            //_mainWindow.systolicLower1.AlarmValue = (int)DefaultSettings.LOWER_SYSTOLIC;
-            //_mainWindow.diastolicLower1.AlarmValue = (int)DefaultSettings.LOWER_DIASTOLIC;
 
-            //_mainWindow.heartRateUpper1.AlarmValue = (int)DefaultSettings.UPPER_PULSE_RATE;
-            //_mainWindow.breathingRateUpper1.AlarmValue = (int)DefaultSettings.UPPER_BREATHING_RATE;
-            //_mainWindow.temperatureUpper1.AlarmValue = (int)DefaultSettings.UPPER_TEMPERATURE;
-            //_mainWindow.systolicUpper1.AlarmValue = (int)DefaultSettings.UPPER_SYSTOLIC;
-            //_mainWindow.diastolicUpper1.AlarmValue = (int)DefaultSettings.UPPER_DIASTOLIC;
-
-            //_mainWindow.heartRateLower1.ValueChanged += new EventHandler(limitsChanged);
-            //_mainWindow.breathingRateLower1.ValueChanged += new EventHandler(limitsChanged);
-            //_mainWindow.temperatureLower1.ValueChanged += new EventHandler(limitsChanged);
-            //_mainWindow.systolicLower1.ValueChanged += new EventHandler(limitsChanged);
-            //_mainWindow.diastolicLower1.ValueChanged += new EventHandler(limitsChanged);
-
-            //_mainWindow.heartRateUpper1.ValueChanged += new EventHandler(limitsChanged);
-            //_mainWindow.breathingRateUpper1.ValueChanged += new EventHandler(limitsChanged);
-            //_mainWindow.temperatureUpper1.ValueChanged += new EventHandler(limitsChanged);
-            //_mainWindow.systolicUpper1.ValueChanged += new EventHandler(limitsChanged);
-            //_mainWindow.diastolicUpper1.ValueChanged += new EventHandler(limitsChanged);
-
-            ///// Patient3
-            //_mainWindow.heartRateLower2.AlarmValue = (int)DefaultSettings.LOWER_PULSE_RATE;
-            //_mainWindow.breathingRateLower2.AlarmValue = (int)DefaultSettings.LOWER_BREATHING_RATE;
-            //_mainWindow.temperatureLower2.AlarmValue = (int)DefaultSettings.LOWER_TEMPERATURE;
-            //_mainWindow.systolicLower2.AlarmValue = (int)DefaultSettings.LOWER_SYSTOLIC;
-            //_mainWindow.diastolicLower2.AlarmValue = (int)DefaultSettings.LOWER_DIASTOLIC;
-
-            //_mainWindow.heartRateUpper2.AlarmValue = (int)DefaultSettings.UPPER_PULSE_RATE;
-            //_mainWindow.breathingRateUpper2.AlarmValue = (int)DefaultSettings.UPPER_BREATHING_RATE;
-            //_mainWindow.temperatureUpper2.AlarmValue = (int)DefaultSettings.UPPER_TEMPERATURE;
-            //_mainWindow.systolicUpper2.AlarmValue = (int)DefaultSettings.UPPER_SYSTOLIC;
-            //_mainWindow.diastolicUpper2.AlarmValue = (int)DefaultSettings.UPPER_DIASTOLIC;
-
-            //_mainWindow.heartRateLower2.ValueChanged += new EventHandler(limitsChanged);
-            //_mainWindow.breathingRateLower2.ValueChanged += new EventHandler(limitsChanged);
-            //_mainWindow.temperatureLower2.ValueChanged += new EventHandler(limitsChanged);
-            //_mainWindow.systolicLower2.ValueChanged += new EventHandler(limitsChanged);
-            //_mainWindow.diastolicLower2.ValueChanged += new EventHandler(limitsChanged);
-
-            //_mainWindow.heartRateUpper2.ValueChanged += new EventHandler(limitsChanged);
-            //_mainWindow.breathingRateUpper2.ValueChanged += new EventHandler(limitsChanged);
-            //_mainWindow.temperatureUpper2.ValueChanged += new EventHandler(limitsChanged);
-            //_mainWindow.systolicUpper2.ValueChanged += new EventHandler(limitsChanged);
-            //_mainWindow.diastolicUpper2.ValueChanged += new EventHandler(limitsChanged);
-
-            ///// Patient4
-            //_mainWindow.heartRateLower3.AlarmValue = (int)DefaultSettings.LOWER_PULSE_RATE;
-            //_mainWindow.breathingRateLower3.AlarmValue = (int)DefaultSettings.LOWER_BREATHING_RATE;
-            //_mainWindow.temperatureLower3.AlarmValue = (int)DefaultSettings.LOWER_TEMPERATURE;
-            //_mainWindow.systolicLower3.AlarmValue = (int)DefaultSettings.LOWER_SYSTOLIC;
-            //_mainWindow.diastolicLower3.AlarmValue = (int)DefaultSettings.LOWER_DIASTOLIC;
-
-            //_mainWindow.heartRateUpper3.AlarmValue = (int)DefaultSettings.UPPER_PULSE_RATE;
-            //_mainWindow.breathingRateUpper3.AlarmValue = (int)DefaultSettings.UPPER_BREATHING_RATE;
-            //_mainWindow.temperatureUpper3.AlarmValue = (int)DefaultSettings.UPPER_TEMPERATURE;
-            //_mainWindow.systolicUpper3.AlarmValue = (int)DefaultSettings.UPPER_SYSTOLIC;
-            //_mainWindow.diastolicUpper3.AlarmValue = (int)DefaultSettings.UPPER_DIASTOLIC;
-
-            //_mainWindow.heartRateLower3.ValueChanged += new EventHandler(limitsChanged);
-            //_mainWindow.breathingRateLower3.ValueChanged += new EventHandler(limitsChanged);
-            //_mainWindow.temperatureLower3.ValueChanged += new EventHandler(limitsChanged);
-            //_mainWindow.systolicLower3.ValueChanged += new EventHandler(limitsChanged);
-            //_mainWindow.diastolicLower3.ValueChanged += new EventHandler(limitsChanged);
-
-            //_mainWindow.heartRateUpper3.ValueChanged += new EventHandler(limitsChanged);
-            //_mainWindow.breathingRateUpper3.ValueChanged += new EventHandler(limitsChanged);
-            //_mainWindow.temperatureUpper3.ValueChanged += new EventHandler(limitsChanged);
-            //_mainWindow.systolicUpper3.ValueChanged += new EventHandler(limitsChanged);
-            //_mainWindow.diastolicUpper3.ValueChanged += new EventHandler(limitsChanged);
 
         }
 
         void limitsChanged(object sender, EventArgs e)
         {
-            //Patient 1 alarm changed
+            
             //_alarmer.PulseRateTester.LowerLimit = _mainWindow.heartRateLower.AlarmValue;
             //_alarmer.BreathingRateTester.LowerLimit = _mainWindow.breathingRateLower.AlarmValue;
             //_alarmer.TemperatureTester.LowerLimit = _mainWindow.temperatureLower.AlarmValue;
@@ -236,45 +161,10 @@ namespace PatientMonitor
             //_alarmer.SystolicBpTester.UpperLimit = _mainWindow.systolicUpper.AlarmValue;
             //_alarmer.DiastolicBpTester.UpperLimit = _mainWindow.diastolicUpper.AlarmValue;
 
-            //Patient 2 alarm changed
-            //_alarmer1.PulseRateTester.LowerLimit = _mainWindow.heartRateLower1.AlarmValue;
-            //_alarmer1.BreathingRateTester.LowerLimit = _mainWindow.breathingRateLower1.AlarmValue;
-            //_alarmer1.TemperatureTester.LowerLimit = _mainWindow.temperatureLower1.AlarmValue;
-            //_alarmer1.SystolicBpTester.LowerLimit = _mainWindow.systolicLower1.AlarmValue;
-            //_alarmer1.DiastolicBpTester.LowerLimit = _mainWindow.diastolicLower1.AlarmValue;
 
-            //_alarmer1.PulseRateTester.UpperLimit = _mainWindow.heartRateUpper1.AlarmValue;
-            //_alarmer1.BreathingRateTester.UpperLimit = _mainWindow.breathingRateUpper1.AlarmValue;
-            //_alarmer1.TemperatureTester.UpperLimit = _mainWindow.temperatureUpper1.AlarmValue;
-            //_alarmer1.SystolicBpTester.UpperLimit = _mainWindow.systolicUpper1.AlarmValue;
-            //_alarmer1.DiastolicBpTester.UpperLimit = _mainWindow.diastolicUpper1.AlarmValue;
-
-            ////Patient 3 alarm changed
-            //_alarmer2.PulseRateTester.LowerLimit = _mainWindow.heartRateLower2.AlarmValue;
-            //_alarmer2.BreathingRateTester.LowerLimit = _mainWindow.breathingRateLower2.AlarmValue;
-            //_alarmer2.TemperatureTester.LowerLimit = _mainWindow.temperatureLower2.AlarmValue;
-            //_alarmer2.SystolicBpTester.LowerLimit = _mainWindow.systolicLower2.AlarmValue;
-            //_alarmer2.DiastolicBpTester.LowerLimit = _mainWindow.diastolicLower2.AlarmValue;
-
-            //_alarmer2.PulseRateTester.UpperLimit = _mainWindow.heartRateUpper2.AlarmValue;
-            //_alarmer2.BreathingRateTester.UpperLimit = _mainWindow.breathingRateUpper2.AlarmValue;
-            //_alarmer2.TemperatureTester.UpperLimit = _mainWindow.temperatureUpper2.AlarmValue;
-            //_alarmer2.SystolicBpTester.UpperLimit = _mainWindow.systolicUpper2.AlarmValue;
-            //_alarmer2.DiastolicBpTester.UpperLimit = _mainWindow.diastolicUpper2.AlarmValue;
-
-            ////Patient 4 alarm changed
-            //_alarmer3.PulseRateTester.LowerLimit = _mainWindow.heartRateLower3.AlarmValue;
-            //_alarmer3.BreathingRateTester.LowerLimit = _mainWindow.breathingRateLower3.AlarmValue;
-            //_alarmer3.TemperatureTester.LowerLimit = _mainWindow.temperatureLower3.AlarmValue;
-            //_alarmer3.SystolicBpTester.LowerLimit = _mainWindow.systolicLower3.AlarmValue;
-            //_alarmer3.DiastolicBpTester.LowerLimit = _mainWindow.diastolicLower3.AlarmValue;
-
-            //_alarmer3.PulseRateTester.UpperLimit = _mainWindow.heartRateUpper3.AlarmValue;
-            //_alarmer3.BreathingRateTester.UpperLimit = _mainWindow.breathingRateUpper3.AlarmValue;
-            //_alarmer3.TemperatureTester.UpperLimit = _mainWindow.temperatureUpper3.AlarmValue;
-            //_alarmer3.SystolicBpTester.UpperLimit = _mainWindow.systolicUpper3.AlarmValue;
-            //_alarmer3.DiastolicBpTester.UpperLimit = _mainWindow.diastolicUpper3.AlarmValue;
         }
+
+
 
         void setupComponents()
         {
@@ -284,35 +174,11 @@ namespace PatientMonitor
             _alarmer1 = (PatientAlarmer)_patientFactory.CreateandReturnObj(PatientClassesEnumeration.PatientAlarmer);
             _alarmer2 = (PatientAlarmer)_patientFactory.CreateandReturnObj(PatientClassesEnumeration.PatientAlarmer);
             _alarmer3 = (PatientAlarmer)_patientFactory.CreateandReturnObj(PatientClassesEnumeration.PatientAlarmer);
-
-            //Patient 1
             _alarmer.BreathingRateAlarm += new EventHandler(soundMutableAlarm);
             _alarmer.DiastolicBloodPressureAlarm += new EventHandler(soundMutableAlarm);
             _alarmer.PulseRateAlarm += new EventHandler(soundMutableAlarm);
             _alarmer.SystolicBloodPressureAlarm += new EventHandler(soundMutableAlarm);
             _alarmer.TemperatureAlarm += new EventHandler(soundMutableAlarm);
-
-            //Patient 2
-            _alarmer1.BreathingRateAlarm += new EventHandler(soundMutableAlarm);
-            _alarmer1.DiastolicBloodPressureAlarm += new EventHandler(soundMutableAlarm1);
-            _alarmer1.PulseRateAlarm += new EventHandler(soundMutableAlarm1);
-            _alarmer1.SystolicBloodPressureAlarm += new EventHandler(soundMutableAlarm1);
-            _alarmer1.TemperatureAlarm += new EventHandler(soundMutableAlarm1);
-
-            //Patient 3
-            _alarmer2.BreathingRateAlarm += new EventHandler(soundMutableAlarm2);
-            _alarmer2.DiastolicBloodPressureAlarm += new EventHandler(soundMutableAlarm2);
-            _alarmer2.PulseRateAlarm += new EventHandler(soundMutableAlarm2);
-            _alarmer2.SystolicBloodPressureAlarm += new EventHandler(soundMutableAlarm2);
-            _alarmer2.TemperatureAlarm += new EventHandler(soundMutableAlarm2);
-
-            //Patient 4
-            _alarmer3.BreathingRateAlarm += new EventHandler(soundMutableAlarm3);
-            _alarmer3.DiastolicBloodPressureAlarm += new EventHandler(soundMutableAlarm3);
-            _alarmer3.PulseRateAlarm += new EventHandler(soundMutableAlarm3);
-            _alarmer3.SystolicBloodPressureAlarm += new EventHandler(soundMutableAlarm3);
-            _alarmer3.TemperatureAlarm += new EventHandler(soundMutableAlarm3);
-
 
             _tickTimer.Stop();
             _tickTimer.Interval = TimeSpan.FromMilliseconds(1000);
@@ -327,7 +193,8 @@ namespace PatientMonitor
             _systolicPressure.Content = _patientData.SystolicBloodPressure;
             _diastolicPressure.Content = _patientData.DiastolicBloodPressure;
             _temperature.Content = _patientData.Temperature;
-            /*_alarmer.ReadingsTest(_patientData);*/ //  sound alarm
+            /*_alarmer.ReadingsTest(_patientData);*/
+            //  sound alarm
 
 
             _patientData.SetPatientData(_dataReader.getData1());
@@ -414,7 +281,6 @@ namespace PatientMonitor
             _dataReader.Connect(fileName, fileName1, fileName2, fileName3, fileName4, fileName5, fileName6, fileName7, fileName8, fileName9);
             _tickTimer.Start();
         }
-
         void soundMutableAlarm(object sender, EventArgs e)
         {
             if (_alarmMuter.IsChecked == false)
@@ -422,27 +288,8 @@ namespace PatientMonitor
                 _mainWindow.soundMutableAlarm();
             }
         }
-        void soundMutableAlarm1(object sender, EventArgs e)
-        {
-            if (_alarmMuter1.IsChecked == false)
-            {
-                _mainWindow.soundMutableAlarm();
-            }
-        }
-        void soundMutableAlarm2(object sender, EventArgs e)
-        {
-            if (_alarmMuter2.IsChecked == false)
-            {
-                _mainWindow.soundMutableAlarm();
-            }
-        }
-        void soundMutableAlarm3(object sender, EventArgs e)
-        {
-            if (_alarmMuter3.IsChecked == false)
-            {
-                _mainWindow.soundMutableAlarm();
-            }
-        }
+
+        
 
     }
 }

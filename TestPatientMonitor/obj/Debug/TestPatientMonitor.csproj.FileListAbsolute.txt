@@ -32,3 +32,19 @@ C:\Users\adobr\Documents\GitHub\EMAA-Tech\TestPatientMonitor\bin\Debug\nunit.fra
 C:\Users\adobr\Documents\GitHub\EMAA-Tech\TestPatientMonitor\obj\Debug\TestPatientMonitor.csprojResolveAssemblyReference.cache
 C:\Users\adobr\Documents\GitHub\EMAA-Tech\TestPatientMonitor\obj\Debug\TestPatientMonitor.dll
 C:\Users\adobr\Documents\GitHub\EMAA-Tech\TestPatientMonitor\obj\Debug\TestPatientMonitor.pdb
+C:\Users\Arturs\Documents\GitHub\EMAA-Tech\TestPatientMonitor\obj\Debug\TestPatientMonitor.csprojResolveAssemblyReference.cache
+C:\Users\Arturs\Documents\GitHub\EMAA-Tech\TestPatientMonitor\obj\Debug\TestPatientMonitor.dll
+C:\Users\Arturs\Desktop\Patient monitor garbage\EMAA-Tech\TestPatientMonitor\bin\Debug\TestPatientMonitor.dll
+C:\Users\Arturs\Desktop\Patient monitor garbage\EMAA-Tech\TestPatientMonitor\bin\Debug\TestPatientMonitor.pdb
+C:\Users\Arturs\Desktop\Patient monitor garbage\EMAA-Tech\TestPatientMonitor\bin\Debug\Moq.dll
+C:\Users\Arturs\Desktop\Patient monitor garbage\EMAA-Tech\TestPatientMonitor\bin\Debug\nunit.framework.dll
+C:\Users\Arturs\Desktop\Patient monitor garbage\EMAA-Tech\TestPatientMonitor\bin\Debug\PatientMonitor.exe
+C:\Users\Arturs\Desktop\Patient monitor garbage\EMAA-Tech\TestPatientMonitor\bin\Debug\PatientMonitor.pdb
+C:\Users\Arturs\Desktop\Patient monitor garbage\EMAA-Tech\TestPatientMonitor\bin\Debug\Moq.xml
+C:\Users\Arturs\Desktop\Patient monitor garbage\EMAA-Tech\TestPatientMonitor\bin\Debug\nunit.framework.xml
+C:\Users\Arturs\Desktop\Patient monitor garbage\EMAA-Tech\TestPatientMonitor\obj\Debug\TestPatientMonitor.csprojResolveAssemblyReference.cache
+C:\Users\Arturs\Desktop\Patient monitor garbage\EMAA-Tech\TestPatientMonitor\obj\Debug\TestPatientMonitor.dll
+C:\Users\Arturs\Desktop\Patient monitor garbage\EMAA-Tech\TestPatientMonitor\obj\Debug\TestPatientMonitor.pdb
+G:\Software enginering\Patient monitor garbage\PatientMonitor 1\TestPatientMonitor\obj\Debug\TestPatientMonitor.csprojResolveAssemblyReference.cache
+G:\Software enginering\Patient monitor garbage\PatientMonitor 1\TestPatientMonitor\obj\Debug\TestPatientMonitor.dll
+G:\Software enginering\Patient monitor garbage\PatientMonitor 1\TestPatientMonitor\obj\Debug\TestPatientMonitor.pdb
