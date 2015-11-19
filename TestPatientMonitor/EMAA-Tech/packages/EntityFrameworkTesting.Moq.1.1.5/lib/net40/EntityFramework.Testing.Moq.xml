@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EntityFramework.Testing.Moq</name>
+    </assembly>
+    <members>
+        <member name="T:Moq.MoqDbSetExtensions">
+            <summary>
+            Extension methods for <see cref="T:Moq.Mock`1"/>.
+            </summary>
+        </member>
+        <member name="M:Moq.MoqDbSetExtensions.SetupData``1(Moq.Mock{System.Data.Entity.DbSet{``0}},System.Collections.Generic.ICollection{``0},System.Func{System.Object[],``0})">
+            <summary>
+            Setup data to <see cref="T:Moq.Mock`1"/>.
+            </summary>
+            <typeparam name="TEntity">The entity type.</typeparam>
+            <param name="mock">The <see cref="T:Moq.Mock`1"/>.</param>
+            <param name="data">The seed data.</param>
+            <param name="find">The find action.</param>
+            <returns>The updated <see cref="T:Moq.Mock`1"/>.</returns>
+        </member>
+    </members>
+</doc>

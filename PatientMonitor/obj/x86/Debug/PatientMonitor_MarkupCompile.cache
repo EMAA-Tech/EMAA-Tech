@@ -4,17 +4,30 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
+H:\My Documents\My Desktop\EMAA-Tech V1.2\PatientMonitor\obj\x86\Debug\
+=======
 G:\Software enginering\Patient monitor garbage\PatientMonitor 1\PatientMonitor\obj\x86\Debug\
+>>>>>>> origin/master
 PatientMonitor
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
+H:\My Documents\My Desktop\EMAA-Tech V1.2\PatientMonitor\App.xaml
+7850962007
+
+2243077358
+20-137497392
+BedsideMonitoring.xaml;CentralMonitroingSystem.xaml;Employee login.xaml;MainWindow.xaml;MainWindowInterface.xaml;monitoringandalarmdetails.xaml;UpDown.xaml;
+=======
 G:\Software enginering\Patient monitor garbage\PatientMonitor 1\PatientMonitor\App.xaml
 61545623597
 
 20-2074102309
 20-1135495126
 BedsideMonitoring.xaml;CentralMonitroingSystem.xaml;MainWindow.xaml;MainWindowInterface.xaml;monitoringandalarmdetails.xaml;UpDown.xaml;
+>>>>>>> origin/master
 
 False
 

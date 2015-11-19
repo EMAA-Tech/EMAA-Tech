@@ -8,7 +8,12 @@
         Title="MainWindow" Height="637.228" Width="1107.065">
     <Grid Background="#FF307E7A">
         <Label x:Name="label" Content="East Anglia Hospital Trust" HorizontalAlignment="Left" Height="197" Margin="251,95,0,0" VerticalAlignment="Top" Width="685" FontSize="53.333"/>
+<<<<<<< HEAD
+        <Button x:Name="btnBedsideMonitoring" Content="Bedside Monitoring" HorizontalAlignment="Left" Height="142" Margin="179,292,0,0" VerticalAlignment="Top" Width="206" FontFamily="Microsoft Sans Serif" FontSize="22.667" Click="btnBedsideMonitoring_Click"/>
+        <Button x:Name="btnCentralStation" Content="Central Station" HorizontalAlignment="Left" Height="142" Margin="699,292,0,0" VerticalAlignment="Top" Width="208" FontFamily="Microsoft Sans Serif" FontSize="22.667" Click="btnCentralStation_Click" />
+=======
         <Button x:Name="btnBedsideMonitoring" Content="Bedside Monitoring" HorizontalAlignment="Left" Height="142" Margin="179,292,0,0" VerticalAlignment="Top" Width="206" FontFamily="Microsoft Sans Serif" FontSize="22.667"/>
         <Button x:Name="btnCentralStation" Content="Central Station" HorizontalAlignment="Left" Height="142" Margin="705,292,0,0" VerticalAlignment="Top" Width="208" FontFamily="Microsoft Sans Serif" FontSize="22.667" Click="btnCentralStation_Click" />
+>>>>>>> origin/master
     </Grid>
 </Window>

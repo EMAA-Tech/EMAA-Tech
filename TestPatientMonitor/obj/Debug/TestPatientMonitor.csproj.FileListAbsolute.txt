@@ -48,3 +48,9 @@ C:\Users\Arturs\Desktop\Patient monitor garbage\EMAA-Tech\TestPatientMonitor\obj
 G:\Software enginering\Patient monitor garbage\PatientMonitor 1\TestPatientMonitor\obj\Debug\TestPatientMonitor.csprojResolveAssemblyReference.cache
 G:\Software enginering\Patient monitor garbage\PatientMonitor 1\TestPatientMonitor\obj\Debug\TestPatientMonitor.dll
 G:\Software enginering\Patient monitor garbage\PatientMonitor 1\TestPatientMonitor\obj\Debug\TestPatientMonitor.pdb
+<<<<<<< HEAD
+C:\Users\adobr\Desktop\EMAA-Tech\TestPatientMonitor\obj\Debug\TestPatientMonitor.csprojResolveAssemblyReference.cache
+C:\Users\adobr\Desktop\EMAA-Tech\TestPatientMonitor\obj\Debug\TestPatientMonitor.dll
+C:\Users\adobr\Desktop\EMAA-Tech\TestPatientMonitor\obj\Debug\TestPatientMonitor.pdb
+=======
+>>>>>>> origin/master

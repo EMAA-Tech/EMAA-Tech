@@ -21,9 +21,22 @@ namespace PatientMonitor
         public MainWindowInterface()
         {
             InitializeComponent();
+<<<<<<< HEAD
         }
 
         private void btnCentralStation_Click(object sender, RoutedEventArgs e)
+        {
+            
+            Employee_login loginScreen = new Employee_login();
+            loginScreen.Show();
+        }
+
+        private void btnBedsideMonitoring_Click(object sender, RoutedEventArgs e)
+=======
+        }
+
+        private void btnCentralStation_Click(object sender, RoutedEventArgs e)
+>>>>>>> origin/master
         {
             MainWindow mainInterface = new MainWindow();
             mainInterface.Show();
