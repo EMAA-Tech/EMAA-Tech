@@ -147,6 +147,7 @@ C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\PatientMo
 C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\PatientMonitor.Properties.Resources.resources
 C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\PatientMonitor.csproj.GenerateResource.Cache
 C:\Users\adobr\Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\PatientMonitor.pdb
+<<<<<<< HEAD
 C:\Users\Arturs\Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\PatientMonitor.exe
 C:\Users\Arturs\Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\PatientMonitor.pdb
 C:\Users\Arturs\Documents\GitHub\EMAA-Tech\PatientMonitor\bin\Debug\PatientMonitor.exe
@@ -353,3 +354,5 @@ H:\My Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\Employee Login.g.c
 H:\My Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\PatientMonitor.g.resources
 H:\My Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\PatientMonitor.Properties.Resources.resources
 H:\My Documents\GitHub\EMAA-Tech\PatientMonitor\obj\x86\Debug\PatientMonitor.csproj.GenerateResource.Cache
+=======
+>>>>>>> origin/master

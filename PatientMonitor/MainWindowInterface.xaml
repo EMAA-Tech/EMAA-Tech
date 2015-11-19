@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="899.204" Width="1443.674" xmlns:my="clr-namespace:PatientMonitor">
     <Grid Background="#FF307E7A">
+<<<<<<< HEAD
         <Grid Margin="10,0,-10,0">
             <Label x:Name="label" Content="BedSide Monitoring System" HorizontalAlignment="Left" Height="82" Margin="22,20,0,0" VerticalAlignment="Top" Width="274" FontSize="18.667" FontFamily="Microsoft Sans Serif">
                 <Label.Background>
@@ -138,5 +139,10 @@
 
 
         </Grid>
+=======
+        <Label x:Name="label" Content="East Anglia Hospital Trust" HorizontalAlignment="Left" Height="197" Margin="251,95,0,0" VerticalAlignment="Top" Width="685" FontSize="53.333"/>
+        <Button x:Name="btnBedsideMonitoring" Content="Bedside Monitoring" HorizontalAlignment="Left" Height="142" Margin="179,292,0,0" VerticalAlignment="Top" Width="206" FontFamily="Microsoft Sans Serif" FontSize="22.667"/>
+        <Button x:Name="btnCentralStation" Content="Central Station" HorizontalAlignment="Left" Height="142" Margin="705,292,0,0" VerticalAlignment="Top" Width="208" FontFamily="Microsoft Sans Serif" FontSize="22.667" />
+>>>>>>> origin/master
     </Grid>
 </Window>
