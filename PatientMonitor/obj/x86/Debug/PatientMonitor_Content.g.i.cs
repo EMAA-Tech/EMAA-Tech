@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("ali%20database%20.accdb")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("database.accdb")]
 
 

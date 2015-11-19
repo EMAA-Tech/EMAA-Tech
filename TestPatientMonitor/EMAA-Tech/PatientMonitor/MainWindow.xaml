@@ -1,0 +1,14 @@
+﻿<Window x:Name="MainWindowInterface1" x:Class="PatientMonitor.MainWindowInterface"
+         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+       
+        mc:Ignorable="d"
+        Title="MainWindow" Height="637.228" Width="1107.065">
+    <Grid Background="#FF307E7A">
+        <Label x:Name="label" Content="East Anglia Hospital Trust" HorizontalAlignment="Left" Height="197" Margin="251,95,0,0" VerticalAlignment="Top" Width="685" FontSize="53.333"/>
+        <Button x:Name="btnBedsideMonitoring" Content="Bedside Monitoring" HorizontalAlignment="Left" Height="142" Margin="179,292,0,0" VerticalAlignment="Top" Width="206" FontFamily="Microsoft Sans Serif" FontSize="22.667"/>
+        <Button x:Name="btnCentralStation" Content="Central Station" HorizontalAlignment="Left" Height="142" Margin="705,292,0,0" VerticalAlignment="Top" Width="208" FontFamily="Microsoft Sans Serif" FontSize="22.667" Click="btnCentralStation_Click" />
+    </Grid>
+</Window>

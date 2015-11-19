@@ -14,19 +14,34 @@ using System.Windows.Shapes;
 namespace PatientMonitor
 {
     /// <summary>
-    /// Interaction logic for Employee_Login.xaml
+    /// Interaction logic for Employee_login.xaml
     /// </summary>
-    public partial class Employee_Login : Window
+    public partial class Employee_login : Window
     {
-        public Employee_Login()
+        public Employee_login()
         {
             InitializeComponent();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            monitoringandalarmdetails mainInterface = new monitoringandalarmdetails();
-            mainInterface.Show();
+            //if (txtID.Text == "admin" && passwordBox.Password == "12345")
+            //{
+            //    monitoringandalarmdetails CentralStation = new monitoringandalarmdetails();
+            //    CentralStation.Show();
+            //    this.Close();
+            //}
+            //else
+            //{
+            //    txtID.Text = string.Empty;
+            //    passwordBox.Password = string.Empty;
+            //    MessageBox.Show("Wrong Username/Password!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            //}
+
+            monitoringandalarmdetails CentralStation = new monitoringandalarmdetails();
+            CentralStation.Show();
+            this.Close();
+
         }
     }
 }

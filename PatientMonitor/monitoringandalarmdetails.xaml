@@ -19,12 +19,12 @@
         <Label Content="" HorizontalAlignment="Left" Height="22" Margin="874,528,0,0" VerticalAlignment="Top" Width="123" Background="White"/>
         <Button x:Name="btnSendEMAIL" Content="Send" HorizontalAlignment="Left" Height="22" Margin="1016,501,0,0" VerticalAlignment="Top" Width="73" Click="btnSendEMAIL_Click"/>
         <Button x:Name="btnSendSMS" Content="Send" HorizontalAlignment="Left" Height="19" Margin="1016,531,0,0" VerticalAlignment="Top" Width="73" Click="btnSendSMS_Click"/>
-        <Label Content="Bay No" HorizontalAlignment="Left" Height="63" Margin="893,43,0,0" VerticalAlignment="Top" Width="122"/>
-        <Label Content="Bed No" HorizontalAlignment="Left" Height="63" Margin="893,77,0,0" VerticalAlignment="Top" Width="122"/>
-        <Label Content="Name" HorizontalAlignment="Left" Height="63" Margin="893,113,0,0" VerticalAlignment="Top" Width="122"/>
-        <Label Content="" HorizontalAlignment="Left" Height="22" Margin="966,50,0,0" VerticalAlignment="Top" Width="123" Background="White"/>
-        <Label Content="" HorizontalAlignment="Left" Height="22" Margin="966,86,0,0" VerticalAlignment="Top" Width="123" Background="White"/>
-        <Label Content="" HorizontalAlignment="Left" Height="22" Margin="966,118,0,0" VerticalAlignment="Top" Width="123" Background="White"/>
+        <Label Content="Bay No" HorizontalAlignment="Left" Height="63" Margin="773,86,0,0" VerticalAlignment="Top" Width="122"/>
+        <Label Content="Bed No" HorizontalAlignment="Left" Height="63" Margin="773,120,0,0" VerticalAlignment="Top" Width="122"/>
+        <Label Content="Name" HorizontalAlignment="Left" Height="63" Margin="773,156,0,0" VerticalAlignment="Top" Width="122"/>
+        <Label Content="" HorizontalAlignment="Left" Height="22" Margin="846,93,0,0" VerticalAlignment="Top" Width="123" Background="White"/>
+        <Label Content="" HorizontalAlignment="Left" Height="22" Margin="846,129,0,0" VerticalAlignment="Top" Width="123" Background="White"/>
+        <Label Content="" HorizontalAlignment="Left" Height="22" Margin="846,161,0,0" VerticalAlignment="Top" Width="123" Background="White"/>
         <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Height="29" Margin="450,590,0,0" VerticalAlignment="Top" Width="111" Click="btnExit_Click" />
         <Grid Height="327" Width="446" Margin="30,150,631.065,160.228">
             <my:NumericUpDown HorizontalAlignment="Left" Margin="227,39,0,0" x:Name="heartRateLower" VerticalAlignment="Top" />
@@ -46,7 +46,5 @@
             <Label Content="Temperature" Height="44" HorizontalAlignment="Left" Margin="12,243,0,0" Name="label7" VerticalAlignment="Top" Width="117" FontSize="14" />
             <CheckBox Content="Mute Alarm" Height="18" HorizontalAlignment="Left" Margin="12,298,0,0" Name="AlarmMute" VerticalAlignment="Top" Width="96" />
         </Grid>
-        <ComboBox HorizontalAlignment="Left" Height="21" Margin="594,87,0,0" VerticalAlignment="Top" Width="189"/>
-        <Label Content="patient" HorizontalAlignment="Left" Height="31" Margin="531,83,0,0" VerticalAlignment="Top" Width="93" FontSize="16"/>
     </Grid>
 </Window>

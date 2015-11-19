@@ -1,7 +1,11 @@
-﻿<Window x:Class="PatientMonitor.Employee_Login"
+﻿<Window x:Class="PatientMonitor.Employee_login"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Employee_Login" Height="637.228" Width="1107.065">
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PatientMonitor"
+        mc:Ignorable="d"
+        Title="Employee_login" Height="637.228" Width="1107.065">
     <Grid Background="#FF307E7E">
         <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="371" Margin="201,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="672" Background="#FF307E7A" Foreground="#FFC13636"/>
         <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Height="296" Margin="234,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="604" Background="{x:Null}"/>
@@ -16,9 +20,9 @@
         </Label>
         <Label x:Name="label1_Copy" Content="ID" HorizontalAlignment="Left" Height="25" Margin="409,277,0,0" VerticalAlignment="Top" Width="108"/>
         <Label x:Name="label1_Copy2" Content="Password" HorizontalAlignment="Left" Height="25" Margin="409,322,0,0" VerticalAlignment="Top" Width="108"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="25" Margin="517,277,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128"/>
-        <TextBox x:Name="textBox1_Copy" HorizontalAlignment="Left" Height="25" Margin="517,322,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128"/>
-        <Button Content="Ok" HorizontalAlignment="Left" Height="23" Margin="712,296,0,0" VerticalAlignment="Top" Width="86" Click="Button_Click"/>
+        <TextBox x:Name="txtID" HorizontalAlignment="Left" Height="25" Margin="517,277,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128"/>
 
+        <Button Content="Ok" HorizontalAlignment="Left" Height="23" Margin="712,296,0,0" VerticalAlignment="Top" Width="86" Click="Button_Click"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="517,322,0,0" VerticalAlignment="Top" Height="25" Width="128"/>
     </Grid>
 </Window>

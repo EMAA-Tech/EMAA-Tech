@@ -87,19 +87,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Ali_Database_DataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Ali_Database_DataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="BedsideMonitoring.xaml.cs">
       <DependentUpon>BedsideMonitoring.xaml</DependentUpon>
     </Compile>
     <Compile Include="CentralMonitroingSystem.xaml.cs">
       <DependentUpon>CentralMonitroingSystem.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Employee Login.xaml.cs">
-      <DependentUpon>Employee Login.xaml</DependentUpon>
+    <Compile Include="DatabaseDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Employee login.xaml.cs">
+      <DependentUpon>Employee login.xaml</DependentUpon>
     </Compile>
     <Compile Include="IPatientData.cs" />
     <Compile Include="IPatientFactory.cs" />
@@ -123,7 +123,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Employee Login.xaml">
+    <Page Include="Employee login.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -175,16 +175,17 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="Ali_Database_DataSet.xsc">
-      <DependentUpon>Ali_Database_DataSet.xsd</DependentUpon>
+    <None Include="app.config" />
+    <None Include="DatabaseDataSet1.xsc">
+      <DependentUpon>DatabaseDataSet1.xsd</DependentUpon>
     </None>
-    <None Include="Ali_Database_DataSet.xsd">
+    <None Include="DatabaseDataSet1.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Ali_Database_DataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>DatabaseDataSet1.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="Ali_Database_DataSet.xss">
-      <DependentUpon>Ali_Database_DataSet.xsd</DependentUpon>
+    <None Include="DatabaseDataSet1.xss">
+      <DependentUpon>DatabaseDataSet1.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
