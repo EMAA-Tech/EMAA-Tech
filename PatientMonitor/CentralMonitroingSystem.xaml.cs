@@ -25,20 +25,20 @@ namespace PatientMonitor
 
         private void RadioButton_Checked(object sender, RoutedEventArgs e)
         {
-            monitoringandalarmdetails frm = new monitoringandalarmdetails();
-            frm.Show();
+            //monitoringandalarmdetails frm = new monitoringandalarmdetails();
+            //frm.Show();
         }
 
         private void RadioButton_Checked_1(object sender, RoutedEventArgs e)
         {
-            monitoringandalarmdetails frm = new monitoringandalarmdetails();
-            frm.Show();
+            //monitoringandalarmdetails frm = new monitoringandalarmdetails();
+            //frm.Show();
         }
 
         private void RadioButton_Checked_2(object sender, RoutedEventArgs e)
         {
-            monitoringandalarmdetails frm = new monitoringandalarmdetails();
-            frm.Show();
+            //monitoringandalarmdetails frm = new monitoringandalarmdetails();
+            //frm.Show();
         }
     }
 }

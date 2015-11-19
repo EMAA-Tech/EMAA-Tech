@@ -16,14 +16,7 @@
                 </LinearGradientBrush>
             </Label.Background>
         </Label>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="192" Margin="362,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="349" Background="#FF307E7A"/>
-        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Height="156" Margin="379,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="315" Background="#FF307E7A"/>
-        <Label x:Name="label1" Content="Employee Login" HorizontalAlignment="Left" Height="25" Margin="401,100,0,0" VerticalAlignment="Top" Width="108"/>
-        <Label x:Name="label1_Copy" Content="ID" HorizontalAlignment="Left" Height="25" Margin="401,149,0,0" VerticalAlignment="Top" Width="108"/>
         <Label x:Name="label1_Copy1" Content="" HorizontalAlignment="Left" Height="25" Margin="401,194,0,0" VerticalAlignment="Top" Width="108"/>
-        <Label x:Name="label1_Copy2" Content="Password" HorizontalAlignment="Left" Height="25" Margin="401,194,0,0" VerticalAlignment="Top" Width="108"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="25" Margin="509,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128"/>
-        <TextBox x:Name="textBox1_Copy" HorizontalAlignment="Left" Height="25" Margin="509,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128"/>
         <Label x:Name="label2" Content="Bay No" HorizontalAlignment="Left" Height="56" Margin="108,287,0,0" VerticalAlignment="Top" Width="136"/>
         <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Height="25" Margin="174,287,0,0" VerticalAlignment="Top" Width="190"/>
         <Label x:Name="label2_Copy" Content="Ward No" HorizontalAlignment="Left" Height="56" Margin="645,287,0,0" VerticalAlignment="Top" Width="136"/>
