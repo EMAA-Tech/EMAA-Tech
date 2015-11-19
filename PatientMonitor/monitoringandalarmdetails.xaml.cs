@@ -22,16 +22,19 @@ namespace PatientMonitor
     public partial class monitoringandalarmdetails :Window
     {
         readonly MainWindow _mainWindow = null;
-        readonly IPatientFactory _patientFactory = null;
+        readonly IPatientFactory _patientFactory  = new PatientFactory();
 
         PatientAlarmer _alarmer;
-        CheckBox _alarmMuter;
+        CheckBox AlarmMuter;
+
+        SoundPlayer mutable = new SoundPlayer(PatientMonitor.Properties.Resources.Mutable);
+        SoundPlayer nonMutable = new SoundPlayer(PatientMonitor.Properties.Resources.NonMutable);
 
 
         public monitoringandalarmdetails()
         {
             InitializeComponent();
-
+            setupComponents();
             heartRateLower.AlarmValue = (int)DefaultSettings.LOWER_PULSE_RATE;
             breathingRateLower.AlarmValue = (int)DefaultSettings.LOWER_BREATHING_RATE;
             temperatureLower.AlarmValue = (int)DefaultSettings.LOWER_TEMPERATURE;
@@ -58,43 +61,49 @@ namespace PatientMonitor
 
         }
 
-
         void limitsChanged(object sender, EventArgs e)
         {
             monitoringandalarmdetails monitor = new monitoringandalarmdetails();
-            PatientAlarmer alarmer = new PatientAlarmer();
+            
+            if (_alarmer == null)
+            {
+                _alarmer = (PatientAlarmer)_patientFactory.CreateandReturnObj(PatientClassesEnumeration.PatientAlarmer);
+            }
             _alarmer.PulseRateTester.LowerLimit = heartRateLower.AlarmValue;
-            _alarmer.BreathingRateTester.LowerLimit = this.breathingRateLower.AlarmValue;
-            _alarmer.TemperatureTester.LowerLimit = this.temperatureLower.AlarmValue;
-            _alarmer.SystolicBpTester.LowerLimit = this.systolicLower.AlarmValue;
-            _alarmer.DiastolicBpTester.LowerLimit = this.diastolicLower.AlarmValue;
+            _alarmer.BreathingRateTester.LowerLimit = breathingRateLower.AlarmValue;
+            _alarmer.TemperatureTester.LowerLimit = temperatureLower.AlarmValue;
+            _alarmer.SystolicBpTester.LowerLimit = systolicLower.AlarmValue;
+            _alarmer.DiastolicBpTester.LowerLimit = diastolicLower.AlarmValue;
 
-            _alarmer.PulseRateTester.UpperLimit = this.heartRateUpper.AlarmValue;
-            _alarmer.BreathingRateTester.UpperLimit = this.breathingRateUpper.AlarmValue;
-            _alarmer.TemperatureTester.UpperLimit = this.temperatureUpper.AlarmValue;
-            _alarmer.SystolicBpTester.UpperLimit = this.systolicUpper.AlarmValue;
-            _alarmer.DiastolicBpTester.UpperLimit = this.diastolicUpper.AlarmValue;
+            _alarmer.PulseRateTester.UpperLimit = heartRateUpper.AlarmValue;
+            _alarmer.BreathingRateTester.UpperLimit = breathingRateUpper.AlarmValue;
+            _alarmer.TemperatureTester.UpperLimit = temperatureUpper.AlarmValue;
+            _alarmer.SystolicBpTester.UpperLimit = systolicUpper.AlarmValue;
+            _alarmer.DiastolicBpTester.UpperLimit = diastolicUpper.AlarmValue;
+            
         }
 
         void setupComponents()
         {
-
+            if (_alarmer == null)
+            {
+                _alarmer = (PatientAlarmer)_patientFactory.CreateandReturnObj(PatientClassesEnumeration.PatientAlarmer);
+            }
             _alarmer = (PatientAlarmer)_patientFactory.CreateandReturnObj(PatientClassesEnumeration.PatientAlarmer);
-
             _alarmer.BreathingRateAlarm += new EventHandler(soundMutableAlarm);
             _alarmer.DiastolicBloodPressureAlarm += new EventHandler(soundMutableAlarm);
             _alarmer.PulseRateAlarm += new EventHandler(soundMutableAlarm);
             _alarmer.SystolicBloodPressureAlarm += new EventHandler(soundMutableAlarm);
             _alarmer.TemperatureAlarm += new EventHandler(soundMutableAlarm);
-
         }
 
 
         void soundMutableAlarm(object sender, EventArgs e)
         {
-            if (_alarmMuter.IsChecked == false)
+            monitoringandalarmdetails monitor = new monitoringandalarmdetails();
+            if (AlarmMuter.IsChecked == false)
             {
-                _mainWindow.soundMutableAlarm();
+                //monitor.soundMutableAlarm();
             }
         }
 
@@ -102,8 +111,15 @@ namespace PatientMonitor
         {
              Application.Current.Shutdown();
         }
-        
 
+        private void btnSendEMAIL_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Email sent!");
+        }
 
+        private void btnSendSMS_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("SMS sent!");
+        }
     }
 }

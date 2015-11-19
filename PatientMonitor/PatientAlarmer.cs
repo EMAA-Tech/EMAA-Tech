@@ -27,7 +27,7 @@ namespace PatientMonitor
 		/// </summary>
 		/// <param name="readings">Readings.</param>
 		public void ReadingsTest(IPatientData readings){
-			if (_breathingRateTester.ValueOutsideLimits (readings.BreathingRate)) {
+            if (_breathingRateTester.ValueOutsideLimits (readings.BreathingRate)) {
 				if (BreathingRateAlarm != null) BreathingRateAlarm (this, null);
 			}
             if (_pulseRateTester.ValueOutsideLimits(readings.PulseRate))

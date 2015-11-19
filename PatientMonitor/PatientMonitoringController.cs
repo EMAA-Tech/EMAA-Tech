@@ -97,8 +97,8 @@ namespace PatientMonitor
             _systolicPressure9 = _mainWindow.systolic9;
             _diastolicPressure9 = _mainWindow.diastolic9;
             _temperature9 = _mainWindow.temperature9;
-
-            //_alarmMuter = _mainWindow.AlarmMute;
+ 
+            _alarmMuter = _mainWindow.AlarmMute;
             //_alarmMuter1 = _mainWindow.AlarmMute1;
             //_alarmMuter2 = _mainWindow.AlarmMute2;
             //_alarmMuter3 = _mainWindow.AlarmMute3;
@@ -193,7 +193,7 @@ namespace PatientMonitor
             _systolicPressure.Content = _patientData.SystolicBloodPressure;
             _diastolicPressure.Content = _patientData.DiastolicBloodPressure;
             _temperature.Content = _patientData.Temperature;
-            /*_alarmer.ReadingsTest(_patientData);*/
+            _alarmer.ReadingsTest(_patientData);
             //  sound alarm
 
 
