@@ -279,6 +279,7 @@ G:\Software enginering\Patient monitor garbage\PatientMonitor 1\PatientMonitor\o
 G:\Software enginering\Patient monitor garbage\PatientMonitor 1\PatientMonitor\obj\x86\Debug\PatientMonitor.g.resources
 G:\Software enginering\Patient monitor garbage\PatientMonitor 1\PatientMonitor\obj\x86\Debug\PatientMonitor.Properties.Resources.resources
 G:\Software enginering\Patient monitor garbage\PatientMonitor 1\PatientMonitor\obj\x86\Debug\PatientMonitor.csproj.GenerateResource.Cache
+<<<<<<< HEAD
 C:\Users\adobr\Desktop\EMAA-Tech\PatientMonitor\obj\x86\Debug\PatientMonitor.exe
 C:\Users\adobr\Desktop\EMAA-Tech\PatientMonitor\obj\x86\Debug\PatientMonitor.pdb
 C:\Users\adobr\Desktop\EMAA-Tech\PatientMonitor\bin\Debug\Database.accdb
@@ -422,3 +423,5 @@ H:\My Documents\My Desktop\EMAA-Tech V1.2\PatientMonitor\obj\x86\Debug\monitorin
 H:\My Documents\My Desktop\EMAA-Tech V1.2\PatientMonitor\obj\x86\Debug\PatientMonitor.g.resources
 H:\My Documents\My Desktop\EMAA-Tech V1.2\PatientMonitor\obj\x86\Debug\PatientMonitor.Properties.Resources.resources
 H:\My Documents\My Desktop\EMAA-Tech V1.2\PatientMonitor\obj\x86\Debug\PatientMonitor.csproj.GenerateResource.Cache
+=======
+>>>>>>> origin/master

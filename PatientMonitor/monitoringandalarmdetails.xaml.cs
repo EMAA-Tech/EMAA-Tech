@@ -22,6 +22,7 @@ namespace PatientMonitor
     public partial class monitoringandalarmdetails :Window
     {
         readonly MainWindow _mainWindow = null;
+<<<<<<< HEAD
         readonly IPatientFactory _patientFactory  = new PatientFactory();
 
         PatientAlarmer _alarmer;
@@ -29,12 +30,22 @@ namespace PatientMonitor
 
         SoundPlayer mutable = new SoundPlayer(PatientMonitor.Properties.Resources.Mutable);
         SoundPlayer nonMutable = new SoundPlayer(PatientMonitor.Properties.Resources.NonMutable);
+=======
+        readonly IPatientFactory _patientFactory = null;
+
+        PatientAlarmer _alarmer;
+        CheckBox _alarmMuter;
+>>>>>>> origin/master
 
 
         public monitoringandalarmdetails()
         {
             InitializeComponent();
+<<<<<<< HEAD
             setupComponents();
+=======
+
+>>>>>>> origin/master
             heartRateLower.AlarmValue = (int)DefaultSettings.LOWER_PULSE_RATE;
             breathingRateLower.AlarmValue = (int)DefaultSettings.LOWER_BREATHING_RATE;
             temperatureLower.AlarmValue = (int)DefaultSettings.LOWER_TEMPERATURE;
@@ -61,6 +72,7 @@ namespace PatientMonitor
 
         }
 
+<<<<<<< HEAD
         void limitsChanged(object sender, EventArgs e)
         {
             monitoringandalarmdetails monitor = new monitoringandalarmdetails();
@@ -81,25 +93,54 @@ namespace PatientMonitor
             _alarmer.SystolicBpTester.UpperLimit = systolicUpper.AlarmValue;
             _alarmer.DiastolicBpTester.UpperLimit = diastolicUpper.AlarmValue;
             
+=======
+
+        void limitsChanged(object sender, EventArgs e)
+        {
+            monitoringandalarmdetails monitor = new monitoringandalarmdetails();
+            PatientAlarmer alarmer = new PatientAlarmer();
+            _alarmer.PulseRateTester.LowerLimit = heartRateLower.AlarmValue;
+            _alarmer.BreathingRateTester.LowerLimit = this.breathingRateLower.AlarmValue;
+            _alarmer.TemperatureTester.LowerLimit = this.temperatureLower.AlarmValue;
+            _alarmer.SystolicBpTester.LowerLimit = this.systolicLower.AlarmValue;
+            _alarmer.DiastolicBpTester.LowerLimit = this.diastolicLower.AlarmValue;
+
+            _alarmer.PulseRateTester.UpperLimit = this.heartRateUpper.AlarmValue;
+            _alarmer.BreathingRateTester.UpperLimit = this.breathingRateUpper.AlarmValue;
+            _alarmer.TemperatureTester.UpperLimit = this.temperatureUpper.AlarmValue;
+            _alarmer.SystolicBpTester.UpperLimit = this.systolicUpper.AlarmValue;
+            _alarmer.DiastolicBpTester.UpperLimit = this.diastolicUpper.AlarmValue;
+>>>>>>> origin/master
         }
 
         void setupComponents()
         {
+<<<<<<< HEAD
             if (_alarmer == null)
             {
                 _alarmer = (PatientAlarmer)_patientFactory.CreateandReturnObj(PatientClassesEnumeration.PatientAlarmer);
             }
             _alarmer = (PatientAlarmer)_patientFactory.CreateandReturnObj(PatientClassesEnumeration.PatientAlarmer);
+=======
+
+            _alarmer = (PatientAlarmer)_patientFactory.CreateandReturnObj(PatientClassesEnumeration.PatientAlarmer);
+
+>>>>>>> origin/master
             _alarmer.BreathingRateAlarm += new EventHandler(soundMutableAlarm);
             _alarmer.DiastolicBloodPressureAlarm += new EventHandler(soundMutableAlarm);
             _alarmer.PulseRateAlarm += new EventHandler(soundMutableAlarm);
             _alarmer.SystolicBloodPressureAlarm += new EventHandler(soundMutableAlarm);
             _alarmer.TemperatureAlarm += new EventHandler(soundMutableAlarm);
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
         }
 
 
         void soundMutableAlarm(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             monitoringandalarmdetails monitor = new monitoringandalarmdetails();
             if (AlarmMuter.IsChecked == false)
             {
@@ -120,6 +161,20 @@ namespace PatientMonitor
         private void btnSendSMS_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("SMS sent!");
+=======
+            if (_alarmMuter.IsChecked == false)
+            {
+                _mainWindow.soundMutableAlarm();
+            }
+>>>>>>> origin/master
         }
+
+        private void btnExit_Click(object sender, RoutedEventArgs e)
+        {
+             Application.Current.Shutdown();
+        }
+        
+
+
     }
 }

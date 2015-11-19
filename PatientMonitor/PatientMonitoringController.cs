@@ -193,7 +193,11 @@ namespace PatientMonitor
             _systolicPressure.Content = _patientData.SystolicBloodPressure;
             _diastolicPressure.Content = _patientData.DiastolicBloodPressure;
             _temperature.Content = _patientData.Temperature;
+<<<<<<< HEAD
             _alarmer.ReadingsTest(_patientData);
+=======
+            /*_alarmer.ReadingsTest(_patientData);*/
+>>>>>>> origin/master
             //  sound alarm
 
 

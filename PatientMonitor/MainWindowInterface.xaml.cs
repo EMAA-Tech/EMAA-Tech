@@ -12,8 +12,11 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Media;
+<<<<<<< HEAD
 using System.Data;
 using System.Data.OleDb;
+=======
+>>>>>>> origin/master
 
 namespace PatientMonitor
 {
@@ -35,6 +38,7 @@ namespace PatientMonitor
 
         public void soundMutableAlarm()
         {
+<<<<<<< HEAD
             //Code for changing label color to display visual alarm
 
             this.pulseRate.Foreground = new SolidColorBrush(Colors.Red);
@@ -42,6 +46,8 @@ namespace PatientMonitor
             this.systolic.Foreground = new SolidColorBrush(Colors.Red);
             this.diastolic.Foreground = new SolidColorBrush(Colors.Red);
             this.temperature.Foreground = new SolidColorBrush(Colors.Red);
+=======
+>>>>>>> origin/master
             mutable.Stop();
             mutable.Play();
         }
@@ -50,6 +56,17 @@ namespace PatientMonitor
         {
             nonMutable.Stop();
             nonMutable.Play();
+<<<<<<< HEAD
+=======
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            monitoringandalarmdetails monitoringAlarmDetails = new monitoringandalarmdetails();
+            monitoringAlarmDetails.Show();
+            MainWindowInterface mainWindowInterface = new MainWindowInterface();
+            //this.Close();
+>>>>>>> origin/master
         }
   
 
