@@ -21,7 +21,6 @@ namespace PatientMonitor
         public MainWindowInterface()
         {
             InitializeComponent();
-<<<<<<< HEAD
         }
 
         private void btnCentralStation_Click(object sender, RoutedEventArgs e)
@@ -32,11 +31,6 @@ namespace PatientMonitor
         }
 
         private void btnBedsideMonitoring_Click(object sender, RoutedEventArgs e)
-=======
-        }
-
-        private void btnCentralStation_Click(object sender, RoutedEventArgs e)
->>>>>>> origin/master
         {
             MainWindow mainInterface = new MainWindow();
             mainInterface.Show();

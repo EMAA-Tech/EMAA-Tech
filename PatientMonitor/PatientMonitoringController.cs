@@ -5,6 +5,8 @@ using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Threading;
+using System.Data;
+using System.Data.OleDb;
 
 namespace PatientMonitor
 {
@@ -37,7 +39,7 @@ namespace PatientMonitor
         {
             _patientFactory = patientFactory;
             _mainWindow = window;
-
+  
             _pulseRate = _mainWindow.pulseRate;
             _breathingRate = _mainWindow.breathingRate;
             _systolicPressure = _mainWindow.systolic;
@@ -85,18 +87,6 @@ namespace PatientMonitor
             _systolicPressure7 = _mainWindow.systolic7;
             _diastolicPressure7 = _mainWindow.diastolic7;
             _temperature7 = _mainWindow.temperature7;
-
-            _pulseRate8 = _mainWindow.pulseRate8;
-            _breathingRate8 = _mainWindow.breathingRate8;
-            _systolicPressure8 = _mainWindow.systolic8;
-            _diastolicPressure8 = _mainWindow.diastolic8;
-            _temperature8 = _mainWindow.temperature8;
-
-            _pulseRate9 = _mainWindow.pulseRate9;
-            _breathingRate9 = _mainWindow.breathingRate9;
-            _systolicPressure9 = _mainWindow.systolic9;
-            _diastolicPressure9 = _mainWindow.diastolic9;
-            _temperature9 = _mainWindow.temperature9;
  
             _alarmMuter = _mainWindow.AlarmMute;
             //_alarmMuter1 = _mainWindow.AlarmMute1;
@@ -187,85 +177,138 @@ namespace PatientMonitor
 
         void updateReadings(object sender, EventArgs e)
         {
-            _patientData.SetPatientData(_dataReader.getData());
-            _pulseRate.Content = _patientData.PulseRate;
-            _breathingRate.Content = _patientData.BreathingRate;
-            _systolicPressure.Content = _patientData.SystolicBloodPressure;
-            _diastolicPressure.Content = _patientData.DiastolicBloodPressure;
-            _temperature.Content = _patientData.Temperature;
-<<<<<<< HEAD
-            _alarmer.ReadingsTest(_patientData);
-=======
-            /*_alarmer.ReadingsTest(_patientData);*/
->>>>>>> origin/master
-            //  sound alarm
+                OleDbConnection dataConnection = new OleDbConnection();
+                DataTable dt = new DataTable();
+                dataConnection.ConnectionString = dataConnection.ConnectionString = (@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=..\..\..\database\\database.accdb");
+                string sql = "select Name from Patient where BedNo  = '1'";
+                OleDbDataAdapter adapt = new OleDbDataAdapter(sql, dataConnection);
+                adapt.Fill(dt);
+                _mainWindow.nameTextBox1.DataContext = dt;
 
+            if (_mainWindow.nameTextBox1.Text != "0")
+            {
+                _patientData.SetPatientData(_dataReader.getData());
+                _pulseRate.Content = _patientData.PulseRate;
+                _breathingRate.Content = _patientData.BreathingRate;
+                _systolicPressure.Content = _patientData.SystolicBloodPressure;
+                _diastolicPressure.Content = _patientData.DiastolicBloodPressure;
+                _temperature.Content = _patientData.Temperature;
+                _alarmer.ReadingsTest(_patientData);
+                //  sound alarm
+            }
+            DataTable dt2 = new DataTable();
+            string sql2 = "select Name from Patient where BedNo  = '2'";
+            OleDbDataAdapter adapt2 = new OleDbDataAdapter(sql2, dataConnection);
+            adapt2.Fill(dt2);
+            _mainWindow.nameTextBox1.DataContext = dt2;
 
-            _patientData.SetPatientData(_dataReader.getData1());
-            _pulseRate1.Content = _patientData.PulseRate;
-            _breathingRate1.Content = _patientData.BreathingRate;
-            _systolicPressure1.Content = _patientData.SystolicBloodPressure;
-            _diastolicPressure1.Content = _patientData.DiastolicBloodPressure;
-            _temperature1.Content = _patientData.Temperature;
-            //_alarmer1.ReadingsTest(_patientData);
+            if (_mainWindow.nameTextBox1.Text != "0")
+            {
+                _patientData.SetPatientData(_dataReader.getData1());
+                _pulseRate1.Content = _patientData.PulseRate;
+                _breathingRate1.Content = _patientData.BreathingRate;
+                _systolicPressure1.Content = _patientData.SystolicBloodPressure;
+                _diastolicPressure1.Content = _patientData.DiastolicBloodPressure;
+                _temperature1.Content = _patientData.Temperature;
+                _alarmer1.ReadingsTest(_patientData);
+            }
 
-            _patientData.SetPatientData(_dataReader.getData2());
-            _pulseRate2.Content = _patientData.PulseRate;
-            _breathingRate2.Content = _patientData.BreathingRate;
-            _systolicPressure2.Content = _patientData.SystolicBloodPressure;
-            _diastolicPressure2.Content = _patientData.DiastolicBloodPressure;
-            _temperature2.Content = _patientData.Temperature;
-            //_alarmer2.ReadingsTest(_patientData);
+            DataTable dt3 = new DataTable();
+            string sql3 = "select Name from Patient where BedNo  = '3'";
+            OleDbDataAdapter adapt3 = new OleDbDataAdapter(sql3, dataConnection);
+            adapt3.Fill(dt3);
+            _mainWindow.nameTextBox1.DataContext = dt3;
 
-            _patientData.SetPatientData(_dataReader.getData3());
-            _pulseRate3.Content = _patientData.PulseRate;
-            _breathingRate3.Content = _patientData.BreathingRate;
-            _systolicPressure3.Content = _patientData.SystolicBloodPressure;
-            _diastolicPressure3.Content = _patientData.DiastolicBloodPressure;
-            _temperature3.Content = _patientData.Temperature;
-            //_alarmer3.ReadingsTest(_patientData);
+            if (_mainWindow.nameTextBox1.Text != "0")
+            {
+                _patientData.SetPatientData(_dataReader.getData2());
+                _pulseRate2.Content = _patientData.PulseRate;
+                _breathingRate2.Content = _patientData.BreathingRate;
+                _systolicPressure2.Content = _patientData.SystolicBloodPressure;
+                _diastolicPressure2.Content = _patientData.DiastolicBloodPressure;
+                _temperature2.Content = _patientData.Temperature;
+                _alarmer2.ReadingsTest(_patientData);
+            }
+            DataTable dt4 = new DataTable();
+            string sql4 = "select Name from Patient where BedNo  = '4'";
+            OleDbDataAdapter adapt4 = new OleDbDataAdapter(sql4, dataConnection);
+            adapt4.Fill(dt4);
+            _mainWindow.nameTextBox1.DataContext = dt4;
 
-            _patientData.SetPatientData(_dataReader.getData4());
-            _pulseRate4.Content = _patientData.PulseRate;
-            _breathingRate4.Content = _patientData.BreathingRate;
-            _systolicPressure4.Content = _patientData.SystolicBloodPressure;
-            _diastolicPressure4.Content = _patientData.DiastolicBloodPressure;
-            _temperature4.Content = _patientData.Temperature;
+            if (_mainWindow.nameTextBox1.Text != "0")
+            {
+                _patientData.SetPatientData(_dataReader.getData3());
+                _pulseRate3.Content = _patientData.PulseRate;
+                _breathingRate3.Content = _patientData.BreathingRate;
+                _systolicPressure3.Content = _patientData.SystolicBloodPressure;
+                _diastolicPressure3.Content = _patientData.DiastolicBloodPressure;
+                _temperature3.Content = _patientData.Temperature;
+                _alarmer3.ReadingsTest(_patientData);
+            }
 
-            _patientData.SetPatientData(_dataReader.getData5());
-            _pulseRate5.Content = _patientData.PulseRate;
-            _breathingRate5.Content = _patientData.BreathingRate;
-            _systolicPressure5.Content = _patientData.SystolicBloodPressure;
-            _diastolicPressure5.Content = _patientData.DiastolicBloodPressure;
-            _temperature5.Content = _patientData.Temperature;
+            DataTable dt5 = new DataTable();
+            string sql5 = "select Name from Patient where BedNo  = '5'";
+            OleDbDataAdapter adapt5 = new OleDbDataAdapter(sql5, dataConnection);
+            adapt5.Fill(dt5);
+            _mainWindow.nameTextBox1.DataContext = dt5;
 
-            _patientData.SetPatientData(_dataReader.getData6());
-            _pulseRate6.Content = _patientData.PulseRate;
-            _breathingRate6.Content = _patientData.BreathingRate;
-            _systolicPressure6.Content = _patientData.SystolicBloodPressure;
-            _diastolicPressure6.Content = _patientData.DiastolicBloodPressure;
-            _temperature6.Content = _patientData.Temperature;
+            if (_mainWindow.nameTextBox1.Text != "0")
+            {
+                _patientData.SetPatientData(_dataReader.getData4());
+                _pulseRate4.Content = _patientData.PulseRate;
+                _breathingRate4.Content = _patientData.BreathingRate;
+                _systolicPressure4.Content = _patientData.SystolicBloodPressure;
+                _diastolicPressure4.Content = _patientData.DiastolicBloodPressure;
+                _temperature4.Content = _patientData.Temperature;
+            }
 
-            _patientData.SetPatientData(_dataReader.getData7());
-            _pulseRate7.Content = _patientData.PulseRate;
-            _breathingRate7.Content = _patientData.BreathingRate;
-            _systolicPressure7.Content = _patientData.SystolicBloodPressure;
-            _diastolicPressure7.Content = _patientData.DiastolicBloodPressure;
-            _temperature7.Content = _patientData.Temperature;
+            DataTable dt6 = new DataTable();
+            string sql6 = "select Name from Patient where BedNo  = '6'";
+            OleDbDataAdapter adapt6 = new OleDbDataAdapter(sql6, dataConnection);
+            adapt6.Fill(dt6);
+            _mainWindow.nameTextBox1.DataContext = dt6;
 
-            _patientData.SetPatientData(_dataReader.getData8());
-            _pulseRate8.Content = _patientData.PulseRate;
-            _breathingRate8.Content = _patientData.BreathingRate;
-            _systolicPressure8.Content = _patientData.SystolicBloodPressure;
-            _diastolicPressure8.Content = _patientData.DiastolicBloodPressure;
-            _temperature8.Content = _patientData.Temperature;
+            if (_mainWindow.nameTextBox1.Text != "0")
+            {
+                _patientData.SetPatientData(_dataReader.getData5());
+                _pulseRate5.Content = _patientData.PulseRate;
+                _breathingRate5.Content = _patientData.BreathingRate;
+                _systolicPressure5.Content = _patientData.SystolicBloodPressure;
+                _diastolicPressure5.Content = _patientData.DiastolicBloodPressure;
+                _temperature5.Content = _patientData.Temperature;
+            }
 
-            _patientData.SetPatientData(_dataReader.getData9());
-            _pulseRate9.Content = _patientData.PulseRate;
-            _breathingRate9.Content = _patientData.BreathingRate;
-            _systolicPressure9.Content = _patientData.SystolicBloodPressure;
-            _diastolicPressure9.Content = _patientData.DiastolicBloodPressure;
-            _temperature9.Content = _patientData.Temperature;
+            DataTable dt7 = new DataTable();
+            string sql7 = "select Name from Patient where BedNo  = '7'";
+            OleDbDataAdapter adapt7 = new OleDbDataAdapter(sql7, dataConnection);
+            adapt7.Fill(dt7);
+            _mainWindow.nameTextBox1.DataContext = dt7;
+
+            if (_mainWindow.nameTextBox1.Text != "0")
+            {
+                _patientData.SetPatientData(_dataReader.getData6());
+                _pulseRate6.Content = _patientData.PulseRate;
+                _breathingRate6.Content = _patientData.BreathingRate;
+                _systolicPressure6.Content = _patientData.SystolicBloodPressure;
+                _diastolicPressure6.Content = _patientData.DiastolicBloodPressure;
+                _temperature6.Content = _patientData.Temperature;
+            }
+
+            DataTable dt8 = new DataTable();
+            string sql8 = "select Name from Patient where BedNo  = '8'";
+            OleDbDataAdapter adapt8 = new OleDbDataAdapter(sql8, dataConnection);
+            adapt8.Fill(dt8);
+            _mainWindow.nameTextBox1.DataContext = dt8;
+
+            if (_mainWindow.nameTextBox1.Text != "0")
+            {
+                _patientData.SetPatientData(_dataReader.getData7());
+                _pulseRate7.Content = _patientData.PulseRate;
+                _breathingRate7.Content = _patientData.BreathingRate;
+                _systolicPressure7.Content = _patientData.SystolicBloodPressure;
+                _diastolicPressure7.Content = _patientData.DiastolicBloodPressure;
+                _temperature7.Content = _patientData.Temperature;
+            }
 
         }
 
@@ -280,9 +323,7 @@ namespace PatientMonitor
             string fileName5 = @"..\..\..\" + "Bed 6.csv";
             string fileName6 = @"..\..\..\" + "Bed 7.csv";
             string fileName7 = @"..\..\..\" + "Bed 8.csv";
-            string fileName8 = @"..\..\..\" + "Bed 9.csv";
-            string fileName9 = @"..\..\..\" + "Bed 10.csv";
-            _dataReader.Connect(fileName, fileName1, fileName2, fileName3, fileName4, fileName5, fileName6, fileName7, fileName8, fileName9);
+            _dataReader.Connect(fileName, fileName1, fileName2, fileName3, fileName4, fileName5, fileName6, fileName7);
             _tickTimer.Start();
         }
         void soundMutableAlarm(object sender, EventArgs e)

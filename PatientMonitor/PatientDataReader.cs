@@ -13,8 +13,7 @@ namespace PatientMonitor
         StreamReader dataFile5;
         StreamReader dataFile6;
         StreamReader dataFile7;
-        StreamReader dataFile8;
-        StreamReader dataFile9;
+
 
         /// <summary>
         /// Initializes a new unconnected instance.
@@ -35,7 +34,7 @@ namespace PatientMonitor
             dataFile.ReadLine();
         }
 
-        public void Connect(string fileName, string fileName1, string fileName2, string fileName3, string fileName4, string fileName5, string fileName6, string fileName7, string fileName8, string fileName9)
+        public void Connect(string fileName, string fileName1, string fileName2, string fileName3, string fileName4, string fileName5, string fileName6, string fileName7)
         {
             // Open the file
             dataFile = new StreamReader(fileName);
@@ -46,8 +45,7 @@ namespace PatientMonitor
             dataFile5 = new StreamReader(fileName5);
             dataFile6 = new StreamReader(fileName6);
             dataFile7 = new StreamReader(fileName7);
-            dataFile8 = new StreamReader(fileName8);
-            dataFile9 = new StreamReader(fileName9);
+
             dataFile.ReadLine();
             dataFile1.ReadLine();
             dataFile2.ReadLine();
@@ -56,8 +54,6 @@ namespace PatientMonitor
             dataFile5.ReadLine();
             dataFile6.ReadLine();
             dataFile7.ReadLine();
-            dataFile8.ReadLine();
-            dataFile9.ReadLine();
         }
 
         public string getData()
@@ -92,13 +88,6 @@ namespace PatientMonitor
         {
             return dataFile7.ReadLine();
         }
-        public string getData8()
-        {
-            return dataFile8.ReadLine();
-        }
-        public string getData9()
-        {
-            return dataFile9.ReadLine();
-        }
+
     }
 }
