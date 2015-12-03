@@ -31,7 +31,15 @@ namespace PatientMonitorTest
         public void GoodUnconnectedCreation()
         {
             var pdr = new PatientDataReader();
-            pdr.Connect(@"..\..\..\TestData.csv");
+            string fileName = @"..\..\..\" + "TestData.csv";
+            string fileName1 = @"..\..\..\" + "TestData.csv";
+            string fileName2 = @"..\..\..\" + "TestData.csv";
+            string fileName3 = @"..\..\..\" + "TestData.csv";
+            string fileName4 = @"..\..\..\" + "TestData.csv";
+            string fileName5 = @"..\..\..\" + "TestData.csv";
+            string fileName6 = @"..\..\..\" + "TestData.csv";
+            string fileName7 = @"..\..\..\" + "TestData.csv";
+            pdr.Connect(fileName,fileName1,fileName2, fileName3, fileName4, fileName5,fileName6, fileName7);
             Assert.AreEqual(dataLine1, pdr.getData());
             Assert.AreEqual(dataLine2, pdr.getData());
         }
@@ -44,7 +52,15 @@ namespace PatientMonitorTest
         public void BadUnconnectedFileName()
         {
             var pdr = new PatientDataReader();
-            pdr.Connect(@"..\..\..\NonExistant.csv");
+            string fileName = @"..\..\..\" + "NonExistant.csv";
+            string fileName1 = @"..\..\..\" + "NonExistant.csv";
+            string fileName2 = @"..\..\..\" + "NonExistant.csv";
+            string fileName3 = @"..\..\..\" + "NonExistant.csv";
+            string fileName4 = @"..\..\..\" + "NonExistant.csv";
+            string fileName5 = @"..\..\..\" + "NonExistant.csv";
+            string fileName6 = @"..\..\..\" + "NonExistant.csv";
+            string fileName7 = @"..\..\..\" + "NonExistant.csv";
+            pdr.Connect(fileName, fileName1, fileName2, fileName3, fileName4, fileName5, fileName6, fileName7);
         }
 	}
 }

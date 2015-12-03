@@ -25,7 +25,7 @@ namespace TestMethodPMS
 			patientData.Setup (b => b.BreathingRate).Returns (15f);
 			patientData.Setup (c => c.SystolicBloodPressure).Returns (135f);
 			patientData.Setup (d => d.DiastolicBloodPressure).Returns (85f);
-			patientData.Setup (e => e.Temperature).Returns (37f);
+			patientData.Setup (e => e.Temperature).Returns (38f);
 			
 			var pulseRateRateAlarmWasCalled = false;
 			var breathingRateAlarmWasCalled = false;
@@ -82,13 +82,13 @@ namespace TestMethodPMS
 			var patientData = new Mock<IPatientData> ();
 			patientData.Setup (a => a.PulseRate).Returns (65f);
 			patientData.Setup (b => b.BreathingRate).Returns (15f);
-			patientData.Setup (c => c.SystolicBloodPressure).Returns (100f);
+			patientData.Setup (c => c.SystolicBloodPressure).Returns (90f);
 			patientData.Setup (d => d.DiastolicBloodPressure).Returns (85f);
-			patientData.Setup (e => e.Temperature).Returns (37f);
+			patientData.Setup (e => e.Temperature).Returns (38f);
 			var systolicAlarmWasCalled = false;
 			pa.SystolicBloodPressureAlarm += (sender, e) => systolicAlarmWasCalled = true;
 			pa.ReadingsTest (patientData.Object);
-			Assert.IsTrue (systolicAlarmWasCalled);
+			Assert.IsTrue(systolicAlarmWasCalled);
 		}
 
 		[TestMethod]
@@ -98,27 +98,27 @@ namespace TestMethodPMS
 			patientData.Setup (a => a.PulseRate).Returns (65f);
 			patientData.Setup (b => b.BreathingRate).Returns (15f);
 			patientData.Setup (c => c.SystolicBloodPressure).Returns (135f);
-			patientData.Setup (d => d.DiastolicBloodPressure).Returns (60f);
-			patientData.Setup (e => e.Temperature).Returns (37f);
+			patientData.Setup (d => d.DiastolicBloodPressure).Returns (58f);
+			patientData.Setup (e => e.Temperature).Returns (38f);
 			var diastolicRateAlarmWasCalled = false;
 			pa.DiastolicBloodPressureAlarm += (sender, e) => diastolicRateAlarmWasCalled = true;
 			pa.ReadingsTest (patientData.Object);
-			Assert.IsTrue (diastolicRateAlarmWasCalled);
+			Assert.IsTrue(diastolicRateAlarmWasCalled);
 		}
 
 		[TestMethod]
 		public void TemperatureEventWasCalled ()
 		{
 			var patientData = new Mock<IPatientData> ();
-			patientData.Setup (a => a.PulseRate).Returns (65f);
-			patientData.Setup (b => b.BreathingRate).Returns (15f);
-			patientData.Setup (c => c.SystolicBloodPressure).Returns (135f);
-			patientData.Setup (d => d.DiastolicBloodPressure).Returns (85f);
-			patientData.Setup (e => e.Temperature).Returns (35f);
+            patientData.Setup(a => a.PulseRate).Returns(60f);
+            patientData.Setup(b => b.BreathingRate).Returns(15f);
+            patientData.Setup(c => c.SystolicBloodPressure).Returns(120f);
+            patientData.Setup(d => d.DiastolicBloodPressure).Returns(70f);
+            patientData.Setup (e => e.Temperature).Returns (36f);
 			var temperatureRateAlarmWasCalled = false;
 			pa.TemperatureAlarm += (sender, e) => temperatureRateAlarmWasCalled = true;
 			pa.ReadingsTest (patientData.Object);
-			Assert.IsTrue (temperatureRateAlarmWasCalled);
+			Assert.IsTrue(temperatureRateAlarmWasCalled);
 		}
 	}
 }

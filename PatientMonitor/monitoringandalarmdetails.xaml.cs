@@ -22,7 +22,7 @@ namespace PatientMonitor
         SoundPlayer mutable = new SoundPlayer(PatientMonitor.Properties.Resources.Mutable);
         SoundPlayer nonMutable = new SoundPlayer(PatientMonitor.Properties.Resources.NonMutable);
 
-
+        
         public monitoringandalarmdetails()
         {
            
@@ -86,42 +86,51 @@ namespace PatientMonitor
             {
                 _alarmer = (PatientAlarmer)_patientFactory.CreateandReturnObj(PatientClassesEnumeration.PatientAlarmer);
             }
-            _alarmer = (PatientAlarmer)_patientFactory.CreateandReturnObj(PatientClassesEnumeration.PatientAlarmer);
-            _alarmer.BreathingRateAlarm += new EventHandler(soundMutableAlarm);
-            _alarmer.DiastolicBloodPressureAlarm += new EventHandler(soundMutableAlarm);
-            _alarmer.PulseRateAlarm += new EventHandler(soundMutableAlarm);
-            _alarmer.SystolicBloodPressureAlarm += new EventHandler(soundMutableAlarm);
-            _alarmer.TemperatureAlarm += new EventHandler(soundMutableAlarm);
         }
 
         void newPatientSelected(object sender,SelectionChangedEventArgs e)
         {
-            ComboBox newcombo = (ComboBox)sender;   
+            ComboBox patientSelector = (ComboBox)sender;   
             OleDbConnection dataConnection = new OleDbConnection();
             DataTable dt = new DataTable();
             dataConnection.ConnectionString = dataConnection.ConnectionString = (@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=..\..\..\database\\database.accdb");
-            string sql = "select * from Patient where BedNo =  '" + newcombo.SelectedValue +"'" ;
+            string sql = "select * from Patient where BedNo =  '" + patientSelector.SelectedValue + "'";
             OleDbDataAdapter adapt = new OleDbDataAdapter(sql, dataConnection);
             adapt.Fill(dt);
             nameTextBox.DataContext = dt;
             nHSNoTextBox.DataContext = dt;
             bedNoTextBox.DataContext = dt;
-
         }
 
 
-        void soundMutableAlarm(object sender, EventArgs e)
+
+        private void btnLogOut_Click(object sender, RoutedEventArgs e)
         {
-            monitoringandalarmdetails monitor = new monitoringandalarmdetails();
-            if (AlarmMuter.IsChecked == false)
+            MessageBoxResult messageBoxResult = System.Windows.MessageBox.Show("Do you really want to log out?", "Log Out Confirmation", System.Windows.MessageBoxButton.YesNo);
+            if (messageBoxResult == MessageBoxResult.Yes)
             {
-                //monitor.soundMutableAlarm();
-            }
-        }
+                OleDbConnection dataConnection = new OleDbConnection();
+                DataTable checkLastDate = new DataTable();
+                dataConnection.ConnectionString = dataConnection.ConnectionString = (@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=..\..\..\database\\database.accdb");
+                string sql = "SELECT LAST(StaffID)FROM Registration;";
+                OleDbDataAdapter adapt2 = new OleDbDataAdapter(sql, dataConnection);
+                adapt2.Fill(checkLastDate);
+                int checkLast = int.Parse(checkLastDate.Rows[0][0].ToString());
 
-        private void btnExit_Click(object sender, RoutedEventArgs e)
-        {
-             Application.Current.Shutdown();
+                OleDbConnection deRegistartion = new OleDbConnection();
+                deRegistartion.ConnectionString = deRegistartion.ConnectionString = (@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=..\..\..\database\\database.accdb");
+
+                OleDbCommand command = new OleDbCommand();
+                //command.CommandText = "INSERT INTO Alarm (StopTime) VALUES (@TimeStamp) WHERE NHSNo = " + NHSNo + "";           
+                command.CommandText = "Update Registration SET DeRegistered = @TimeStamp WHERE StaffID = " + checkLast + "";
+                command.Parameters.Add("@Timestamp", OleDbType.Date).Value = DateTime.Now;
+
+                command.Connection = deRegistartion;
+                command.Connection.Open();
+                command.ExecuteNonQuery();
+
+                Application.Current.Shutdown();
+            }
         }
 
         private void btnSendEMAIL_Click(object sender, RoutedEventArgs e)
@@ -134,29 +143,22 @@ namespace PatientMonitor
             MessageBox.Show("SMS sent!");
         }
 
-       
+
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-
             PatientMonitor.DatabaseDataSet databaseDataSet = ((PatientMonitor.DatabaseDataSet)(this.FindResource("databaseDataSet")));
             // Load data into the table Patient. You can modify this code as needed.
             PatientMonitor.DatabaseDataSetTableAdapters.PatientTableAdapter databaseDataSetPatientTableAdapter = new PatientMonitor.DatabaseDataSetTableAdapters.PatientTableAdapter();
             databaseDataSetPatientTableAdapter.Fill(databaseDataSet.Patient);
             System.Windows.Data.CollectionViewSource patientViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("patientViewSource")));
             patientViewSource.View.MoveCurrentToFirst();
+            // Load data into the table Registration. You can modify this code as needed.
+            PatientMonitor.DatabaseDataSetTableAdapters.RegistrationTableAdapter databaseDataSetRegistrationTableAdapter = new PatientMonitor.DatabaseDataSetTableAdapters.RegistrationTableAdapter();
+            databaseDataSetRegistrationTableAdapter.Fill(databaseDataSet.Registration);
+            System.Windows.Data.CollectionViewSource registrationViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("registrationViewSource")));
+            registrationViewSource.View.MoveCurrentToFirst();
         }
 
-        private void changeData_Copy_Click(object sender, RoutedEventArgs e)
-        {
-            OleDbConnection dataConnection = new OleDbConnection();
-            DataTable dt = new DataTable();
-            dataConnection.ConnectionString = dataConnection.ConnectionString = (@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=..\..\..\database\\database.accdb");
-            OleDbDataAdapter adapt = new OleDbDataAdapter("select * from Patient where Name like 'James'", dataConnection);
-            adapt.Fill(dt);
-            nameTextBox.DataContext = dt;
-            nHSNoTextBox.DataContext = dt;
-            bedNoTextBox.DataContext = dt;
-        }
     }
 }

@@ -1,16 +1,17 @@
 ﻿<Window x:Class="PatientMonitor.monitoringandalarmdetails"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="monitoringandalarmdetails" Height="704" Width="1139.55" xmlns:my="clr-namespace:PatientMonitor" Loaded="Window_Loaded">
+        Title="Monitoring and Alarm Details" Height="704" Width="1139.55" xmlns:my="clr-namespace:PatientMonitor" Loaded="Window_Loaded">
     <Window.Resources>
         <my:DatabaseDataSet x:Key="databaseDataSet"/>
         <CollectionViewSource x:Key="patientViewSource" Source="{Binding Patient, Source={StaticResource databaseDataSet}}"/>
+        <CollectionViewSource x:Key="registrationViewSource" Source="{Binding Registration, Source={StaticResource databaseDataSet}}"/>
     </Window.Resources>
     <Grid Height="637.228" Width="1107.065" Background="#FF307E7A">
         <Label Name="lblSent" Height="29" Width="145" FontSize="11" FontFamily="Microsoft Sans Serif" TabIndex="33" Visibility="Hidden" Foreground="White" Background="Red" Margin="534,500,116,32" HorizontalAlignment="Right" VerticalAlignment="Bottom" >MESSAGE SENT</Label>
         <Label Name="label11" Height="22" Width="9" FontSize="11" FontFamily="Microsoft Sans Serif" TabIndex="18"  Margin="76,486,710,53" HorizontalAlignment="Right" VerticalAlignment="Bottom" ></Label>
         <Label Name="label4" Height="58" Width="265" FontSize="18.667" FontFamily="Microsoft Sans Serif" TabIndex="6" Foreground="Black" Background="White" Margin="0,0,832.065,554.228" HorizontalAlignment="Right" VerticalAlignment="Bottom" >Monitoring and Alarm Details</Label>
-        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Height="29" Margin="505,496,0,0" VerticalAlignment="Top" Width="111" Click="btnExit_Click" />
+        <Button x:Name="btnLogOut" Content="Log Out" HorizontalAlignment="Left" Height="29" Margin="505,492,0,0" VerticalAlignment="Top" Width="111" Click="btnLogOut_Click" />
         <Grid Height="327" Width="446" Margin="30,150,631.065,160.228">
             <my:NumericUpDown HorizontalAlignment="Left" Margin="227,39,0,0" x:Name="heartRateLower" VerticalAlignment="Top" />
             <my:NumericUpDown HorizontalAlignment="Left" Margin="227,90,0,0" x:Name="breathingRateLower" VerticalAlignment="Top" />
@@ -29,10 +30,9 @@
             <Label Content="Systolic Pressure" Height="44" HorizontalAlignment="Left" Margin="12,141,0,0" Name="label3" VerticalAlignment="Top" Width="117" ClipToBounds="True" FontSize="14" />
             <Label Content="Diastolic Pressure" Height="44" HorizontalAlignment="Left" Margin="12,192,0,0" Name="label14" VerticalAlignment="Top" Width="117" FontSize="14" />
             <Label Content="Temperature" Height="44" HorizontalAlignment="Left" Margin="12,243,0,0" Name="label7" VerticalAlignment="Top" Width="117" FontSize="14" />
-            <CheckBox Content="Mute Alarm" Height="18" HorizontalAlignment="Left" Margin="12,298,0,0" Name="AlarmMute" VerticalAlignment="Top" Width="96" />
         </Grid>
         <ComboBox  x:Name="patientSelector" Height="21" HorizontalAlignment="Left" Margin="655,246,0,0"  VerticalAlignment="Top" Width="129" SelectedValuePath="Content" >
-            <ComboBoxItem Name="Be1" >1</ComboBoxItem>
+            <ComboBoxItem Name="Bed1" >1</ComboBoxItem>
             <ComboBoxItem Name="Bed2" >2</ComboBoxItem>
             <ComboBoxItem Name="Bed3" >3</ComboBoxItem>
             <ComboBoxItem Name="Bed4" >4</ComboBoxItem>
@@ -40,7 +40,6 @@
             <ComboBoxItem Name="Bed6" >6</ComboBoxItem>
             <ComboBoxItem Name="Bed7" >7</ComboBoxItem>
             <ComboBoxItem Name="Bed8" >8</ComboBoxItem>
-
         </ComboBox>
         <Grid x:Name="grid1" DataContext="{StaticResource patientViewSource}" HorizontalAlignment="Left" Margin="725,92,0,0" VerticalAlignment="Top">
             <Grid.ColumnDefinitions>
@@ -76,5 +75,14 @@
             <TextBox x:Name="bedNoTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="23,174,-17,-166" Grid.Row="0" Text="{Binding BedNo, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120"/>
         </Grid>
         <Label x:Name="label" Content="Select bed:" HorizontalAlignment="Left" Height="25" Margin="672,216,0,0" VerticalAlignment="Top" Width="96"/>
+        <Grid x:Name="grid4" DataContext="{StaticResource registrationViewSource}" HorizontalAlignment="Left" Margin="410,30,0,0" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+        </Grid>
     </Grid>
 </Window>

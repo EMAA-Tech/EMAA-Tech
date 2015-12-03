@@ -18,7 +18,7 @@
                 </LinearGradientBrush>
             </Label.Background>
         </Label>
-        <Label x:Name="label1_Copy" Content="ID" HorizontalAlignment="Left" Height="25" Margin="480,277,0,0" VerticalAlignment="Top" Width="32"/>
+        <Label x:Name="label1_Copy" Content="Staff ID" HorizontalAlignment="Left" Height="25" Margin="453,277,0,0" VerticalAlignment="Top" Width="59"/>
         <Label x:Name="label1_Copy2" Content="Password" HorizontalAlignment="Left" Height="25" Margin="453,322,0,0" VerticalAlignment="Top" Width="59"/>
         <TextBox x:Name="txtID" HorizontalAlignment="Left" Height="25" Margin="517,277,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128"/>
 

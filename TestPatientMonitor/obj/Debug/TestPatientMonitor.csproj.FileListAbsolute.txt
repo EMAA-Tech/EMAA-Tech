@@ -59,3 +59,18 @@ C:\Users\adobr\Desktop\EMAA-Tech V1.2\TestPatientMonitor\obj\Debug\TestPatientMo
 C:\Users\adobr\Desktop\EMAA-Tech V1.2\TestPatientMonitor\obj\Debug\TestPatientMonitor.pdb
 C:\Users\Arturs\Desktop\EMAA-Tech V1.2\TestPatientMonitor\obj\Debug\TestPatientMonitor.csprojResolveAssemblyReference.cache
 C:\Users\Arturs\Desktop\EMAA-Tech V1.2\TestPatientMonitor\obj\Debug\TestPatientMonitor.dll
+C:\Users\Arturs\Desktop\EMAA-Tech V1.4\TestPatientMonitor\obj\Debug\TestPatientMonitor.csprojResolveAssemblyReference.cache
+C:\Users\Arturs\Desktop\EMAA-Tech V1.4\TestPatientMonitor\obj\Debug\TestPatientMonitor.dll
+C:\Users\adobr\Desktop\Previous versions\EMAA-Tech V1.4\TestPatientMonitor\obj\Debug\TestPatientMonitor.csprojResolveAssemblyReference.cache
+C:\Users\adobr\Desktop\Previous versions\EMAA-Tech V1.4\TestPatientMonitor\obj\Debug\TestPatientMonitor.dll
+C:\Users\adobr\Desktop\Previous versions\EMAA-Tech V1.4\TestPatientMonitor\bin\Debug\database.accdb
+C:\Users\adobr\Desktop\Previous versions\EMAA-Tech V1.4\TestPatientMonitor\bin\Debug\TestPatientMonitor.dll
+C:\Users\adobr\Desktop\Previous versions\EMAA-Tech V1.4\TestPatientMonitor\bin\Debug\TestPatientMonitor.pdb
+C:\Users\adobr\Desktop\Previous versions\EMAA-Tech V1.4\TestPatientMonitor\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\adobr\Desktop\Previous versions\EMAA-Tech V1.4\TestPatientMonitor\bin\Debug\Moq.dll
+C:\Users\adobr\Desktop\Previous versions\EMAA-Tech V1.4\TestPatientMonitor\bin\Debug\nunit.framework.dll
+C:\Users\adobr\Desktop\Previous versions\EMAA-Tech V1.4\TestPatientMonitor\bin\Debug\PatientMonitor.exe
+C:\Users\adobr\Desktop\Previous versions\EMAA-Tech V1.4\TestPatientMonitor\bin\Debug\PatientMonitor.pdb
+C:\Users\adobr\Desktop\Previous versions\EMAA-Tech V1.4\TestPatientMonitor\bin\Debug\Moq.xml
+C:\Users\adobr\Desktop\Previous versions\EMAA-Tech V1.4\TestPatientMonitor\bin\Debug\nunit.framework.xml
+C:\Users\adobr\Desktop\Previous versions\EMAA-Tech V1.4\TestPatientMonitor\obj\Debug\TestPatientMonitor.pdb

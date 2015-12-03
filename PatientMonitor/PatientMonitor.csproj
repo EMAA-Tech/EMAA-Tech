@@ -87,12 +87,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="BedsideMonitoring.xaml.cs">
-      <DependentUpon>BedsideMonitoring.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="CentralMonitroingSystem.xaml.cs">
-      <DependentUpon>CentralMonitroingSystem.xaml</DependentUpon>
-    </Compile>
     <Compile Include="DatabaseDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -115,14 +109,6 @@
     <Compile Include="UpDown.xaml.cs">
       <DependentUpon>UpDown.xaml</DependentUpon>
     </Compile>
-    <Page Include="BedsideMonitoring.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="CentralMonitroingSystem.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Employee login.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
