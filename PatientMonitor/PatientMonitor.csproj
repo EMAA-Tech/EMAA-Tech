@@ -87,21 +87,26 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddNewPatient.cs" />
+    <Compile Include="AddStartOfAlarm.cs" />
     <Compile Include="DatabaseDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DeletePatient.cs" />
     <Compile Include="Employee login.xaml.cs">
       <DependentUpon>Employee login.xaml</DependentUpon>
     </Compile>
     <Compile Include="IPatientData.cs" />
     <Compile Include="IPatientFactory.cs" />
-    <Compile Include="MainWindowInterface.xaml.cs">
-      <DependentUpon>MainWindowInterface.xaml</DependentUpon>
+    <Compile Include="Login.cs" />
+    <Compile Include="Logout.cs" />
+    <Compile Include="Bedside monitor.xaml.cs">
+      <DependentUpon>Bedside monitor.xaml</DependentUpon>
     </Compile>
-    <Compile Include="monitoringandalarmdetails.xaml.cs">
-      <DependentUpon>monitoringandalarmdetails.xaml</DependentUpon>
+    <Compile Include="Central station.xaml.cs">
+      <DependentUpon>Central station.xaml</DependentUpon>
     </Compile>
     <Compile Include="PatientClassesEnumeration.cs" />
     <Compile Include="PatientMonitoringController.cs" />
@@ -109,6 +114,7 @@
     <Compile Include="UpDown.xaml.cs">
       <DependentUpon>UpDown.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ValidateStaffOnCall.cs" />
     <Page Include="Employee login.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -127,11 +133,11 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="MainWindowInterface.xaml">
+    <Page Include="Bedside monitor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="monitoringandalarmdetails.xaml">
+    <Page Include="Central station.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

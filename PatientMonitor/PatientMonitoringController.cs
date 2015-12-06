@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Windows.Media;
 using System.Windows.Controls;
 using System.Windows.Threading;
@@ -12,41 +9,22 @@ namespace PatientMonitor
 {
     class PatientMonitoringController
     {
-        readonly MainWindow _mainWindow = null;
+        readonly BedsideMonitoringStation _mainWindow = null;
         readonly IPatientFactory _patientFactory = null;
         DispatcherTimer _tickTimer = new DispatcherTimer();
         PatientDataReader _dataReader;
         PatientData _patientData;
-        PatientAlarmer _alarmer;
-        PatientAlarmer _alarmer1;
-        PatientAlarmer _alarmer2;
-        PatientAlarmer _alarmer3;
-        PatientAlarmer _alarmer4;
-        PatientAlarmer _alarmer5;
-        PatientAlarmer _alarmer6;
-        PatientAlarmer _alarmer7;
 
-        CheckBox _alarmMuter;
-        CheckBox _alarmMuter1;
-        CheckBox _alarmMuter2;
-        CheckBox _alarmMuter3;
+        PatientAlarmer _alarmer, _alarmer1, _alarmer2, _alarmer3, _alarmer4, _alarmer5, _alarmer6, _alarmer7;
+        bool alarmActivated, alarmActivated1, alarmActivated2, alarmActivated3, alarmActivated4, alarmActivated5, alarmActivated6, alarmActivated7 = false;
 
-        bool alarmActivated = false;
-        bool alarmActivated1 = false;
-        bool alarmActivated2 = false;
-        bool alarmActivated3 = false;
-        bool alarmActivated4 = false;
-        bool alarmActivated5 = false;
-        bool alarmActivated6 = false;
-        bool alarmActivated7 = false;
         Label _pulseRate, _pulseRate1, _pulseRate2, _pulseRate3, _pulseRate4, _pulseRate5, _pulseRate6, _pulseRate7;
         Label _breathingRate, _breathingRate1, _breathingRate2, _breathingRate3, _breathingRate4, _breathingRate5, _breathingRate6, _breathingRate7;
         Label _systolicPressure, _systolicPressure1, _systolicPressure2, _systolicPressure3, _systolicPressure4, _systolicPressure5, _systolicPressure6, _systolicPressure7;
         Label _diastolicPressure, _diastolicPressure1, _diastolicPressure2, _diastolicPressure3, _diastolicPressure4, _diastolicPressure5, _diastolicPressure6, _diastolicPressure7;
         Label _temperature, _temperature1, _temperature2, _temperature3, _temperature4, _temperature5, _temperature6, _temperature7;
 
-
-        public PatientMonitoringController(MainWindow window, IPatientFactory patientFactory)
+        public PatientMonitoringController(BedsideMonitoringStation window, IPatientFactory patientFactory)
         {
             _patientFactory = patientFactory;
             _mainWindow = window;
@@ -97,75 +75,14 @@ namespace PatientMonitor
             _breathingRate7 = _mainWindow.breathingRate7;
             _systolicPressure7 = _mainWindow.systolic7;
             _diastolicPressure7 = _mainWindow.diastolic7;
-            _temperature7 = _mainWindow.temperature7;
- 
-            //_alarmMuter = _mainWindow.AlarmMute;
-            //_alarmMuter1 = _mainWindow.AlarmMute1;
-            //_alarmMuter2 = _mainWindow.AlarmMute2;
-            //_alarmMuter3 = _mainWindow.AlarmMute3;
+            _temperature7 = _mainWindow.temperature7; 
         }
 
         public void RunMonitor()
         {
             setupComponents();
             newPatientSelected();
-
         }
-        void setupUI()
-        {
-            //_mainWindow.patientSelector.SelectionChanged
-            //    += new System.Windows.Controls.SelectionChangedEventHandler(newPatientSelected);
-
-            //monitoringandalarmdetails monitoring = new monitoringandalarmdetails();
-            //monitoring.heartRateLower.AlarmValue = (int)DefaultSettings.LOWER_PULSE_RATE;
-
-            //_mainWindow.heartRateLower.AlarmValue = (int)DefaultSettings.LOWER_PULSE_RATE;
-            //_mainWindow.breathingRateLower.AlarmValue = (int)DefaultSettings.LOWER_BREATHING_RATE;
-            //_mainWindow.temperatureLower.AlarmValue = (int)DefaultSettings.LOWER_TEMPERATURE;
-            //_mainWindow.systolicLower.AlarmValue = (int)DefaultSettings.LOWER_SYSTOLIC;
-            //_mainWindow.diastolicLower.AlarmValue = (int)DefaultSettings.LOWER_DIASTOLIC;
-
-            //_mainWindow.heartRateUpper.AlarmValue = (int)DefaultSettings.UPPER_PULSE_RATE;
-            //_mainWindow.breathingRateUpper.AlarmValue = (int)DefaultSettings.UPPER_BREATHING_RATE;
-            //_mainWindow.temperatureUpper.AlarmValue = (int)DefaultSettings.UPPER_TEMPERATURE;
-            //_mainWindow.systolicUpper.AlarmValue = (int)DefaultSettings.UPPER_SYSTOLIC;
-            //_mainWindow.diastolicUpper.AlarmValue = (int)DefaultSettings.UPPER_DIASTOLIC;
-
-            //_mainWindow.heartRateLower.ValueChanged += new EventHandler(limitsChanged);
-            //_mainWindow.breathingRateLower.ValueChanged += new EventHandler(limitsChanged);
-            //_mainWindow.temperatureLower.ValueChanged += new EventHandler(limitsChanged);
-            //_mainWindow.systolicLower.ValueChanged += new EventHandler(limitsChanged);
-            //_mainWindow.diastolicLower.ValueChanged += new EventHandler(limitsChanged);
-
-            //_mainWindow.heartRateUpper.ValueChanged += new EventHandler(limitsChanged);
-            //_mainWindow.breathingRateUpper.ValueChanged += new EventHandler(limitsChanged);
-            //_mainWindow.temperatureUpper.ValueChanged += new EventHandler(limitsChanged);
-            //_mainWindow.systolicUpper.ValueChanged += new EventHandler(limitsChanged);
-            //_mainWindow.diastolicUpper.ValueChanged += new EventHandler(limitsChanged);
-
-
-
-        }
-
-        void limitsChanged(object sender, EventArgs e)
-        {
-            
-            //_alarmer.PulseRateTester.LowerLimit = _mainWindow.heartRateLower.AlarmValue;
-            //_alarmer.BreathingRateTester.LowerLimit = _mainWindow.breathingRateLower.AlarmValue;
-            //_alarmer.TemperatureTester.LowerLimit = _mainWindow.temperatureLower.AlarmValue;
-            //_alarmer.SystolicBpTester.LowerLimit = _mainWindow.systolicLower.AlarmValue;
-            //_alarmer.DiastolicBpTester.LowerLimit = _mainWindow.diastolicLower.AlarmValue;
-
-            //_alarmer.PulseRateTester.UpperLimit = _mainWindow.heartRateUpper.AlarmValue;
-            //_alarmer.BreathingRateTester.UpperLimit = _mainWindow.breathingRateUpper.AlarmValue;
-            //_alarmer.TemperatureTester.UpperLimit = _mainWindow.temperatureUpper.AlarmValue;
-            //_alarmer.SystolicBpTester.UpperLimit = _mainWindow.systolicUpper.AlarmValue;
-            //_alarmer.DiastolicBpTester.UpperLimit = _mainWindow.diastolicUpper.AlarmValue;
-
-
-        }
-
-
 
         void setupComponents()
         {
@@ -179,7 +96,7 @@ namespace PatientMonitor
             _alarmer5 = (PatientAlarmer)_patientFactory.CreateandReturnObj(PatientClassesEnumeration.PatientAlarmer);
             _alarmer6 = (PatientAlarmer)_patientFactory.CreateandReturnObj(PatientClassesEnumeration.PatientAlarmer);
             _alarmer7 = (PatientAlarmer)_patientFactory.CreateandReturnObj(PatientClassesEnumeration.PatientAlarmer);
-            
+
             _alarmer.BreathingRateAlarm += new EventHandler(soundMutableAlarm);
             _alarmer.DiastolicBloodPressureAlarm += new EventHandler(soundMutableAlarm);
             _alarmer.PulseRateAlarm += new EventHandler(soundMutableAlarm);
@@ -252,7 +169,6 @@ namespace PatientMonitor
                 _diastolicPressure.Content = _patientData.DiastolicBloodPressure;
                 _temperature.Content = _patientData.Temperature;
                 _alarmer.ReadingsTest(_patientData);
-                //  sound alarm
             }
             DataTable dt2 = new DataTable();
             string sql2 = "select Name from Patient where BedNo  = '2'";
@@ -371,7 +287,6 @@ namespace PatientMonitor
                 _temperature7.Content = _patientData.Temperature;
                 _alarmer7.ReadingsTest(_patientData);
             }
-
         }
 
         void newPatientSelected()
@@ -389,175 +304,147 @@ namespace PatientMonitor
             _tickTimer.Start();
         }
         void addStartOfAlarm(int mute)
-        {
-            OleDbConnection dataConnection = new OleDbConnection();           
-
-            OleDbConnection rectifyAlarmDateTime = new OleDbConnection();
-
-            rectifyAlarmDateTime.ConnectionString = rectifyAlarmDateTime.ConnectionString = (@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=..\..\..\database\\database.accdb");
-            {
-                OleDbConnection dataConnection2 = new OleDbConnection();
-                DataTable checkLastDate = new DataTable();
-                dataConnection2.ConnectionString = dataConnection2.ConnectionString = (@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=..\..\..\database\\database.accdb");
-                string sql = "SELECT LAST(StaffID)FROM Registration;";
-                OleDbDataAdapter adapt2 = new OleDbDataAdapter(sql, dataConnection2);
-                adapt2.Fill(checkLastDate);
-                int checkLast = int.Parse(checkLastDate.Rows[0][0].ToString());
-
-                DataTable dt = new DataTable();
-                dataConnection.ConnectionString = dataConnection.ConnectionString = (@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=..\..\..\database\\database.accdb");
-                OleDbDataAdapter adapt = new OleDbDataAdapter("select NHSNo from Patient where BedNo = '" + mute + "'", dataConnection);
-                adapt.Fill(dt);
-                int NHSNo = int.Parse(dt.Rows[0][0].ToString());
-
-                OleDbCommand command = new OleDbCommand();
-                command.CommandText = "INSERT INTO Alarm (StartTime, NHSNo, StaffID) VALUES (@TimeStamp, @NHSNo, @StaffID)";
-
-
-                command.Parameters.Add("@Timestamp", OleDbType.Date).Value = DateTime.Now;
-                command.Parameters.Add("@NHSNo", OleDbType.Integer).Value = NHSNo;
-                command.Parameters.Add("@StaffID", OleDbType.Integer).Value = checkLast;
-                
-
-                command.Connection = rectifyAlarmDateTime;
-                command.Connection.Open();
-                command.ExecuteNonQuery();
-            }
+        {           
+            AddStartOfAlarm addStartofAlarm = new AddStartOfAlarm();
+            addStartofAlarm.addStartOfAlarm(mute);
         }
-
         void soundMutableAlarm(object sender, EventArgs e)
         {
-            
-            if(alarmActivated == false)
+            var changeColor = new SolidColorBrush(Colors.Red);
+            if (alarmActivated == false)
             {
                 int mute = 1;
                 addStartOfAlarm(mute);
                 alarmActivated = true;
-                
-                _mainWindow.pulseRate.Foreground = new SolidColorBrush(Colors.Red);
-                _mainWindow.breathingRate.Foreground = new SolidColorBrush(Colors.Red);
-                _mainWindow.systolic.Foreground = new SolidColorBrush(Colors.Red);
-                _mainWindow.diastolic.Foreground = new SolidColorBrush(Colors.Red);
-                _mainWindow.temperature.Foreground = new SolidColorBrush(Colors.Red);
+
+                _mainWindow.pulseRate.Foreground = changeColor;
+                _mainWindow.breathingRate.Foreground = changeColor;
+                _mainWindow.systolic.Foreground = changeColor;
+                _mainWindow.diastolic.Foreground = changeColor;
+                _mainWindow.temperature.Foreground = changeColor;
             }
             _mainWindow.soundMutableAlarm();
         }
 
         void soundMutableAlarm1(object sender, EventArgs e)
         {
+            var changeColor = new SolidColorBrush(Colors.Red);
             if (alarmActivated1 == false)
             {
                 int mute = 2;
                 addStartOfAlarm(mute);
                 alarmActivated1 = true;
-                
-                _mainWindow.pulseRate1.Foreground = new SolidColorBrush(Colors.Red);
-                _mainWindow.breathingRate1.Foreground = new SolidColorBrush(Colors.Red);
-                _mainWindow.systolic1.Foreground = new SolidColorBrush(Colors.Red);
-                _mainWindow.diastolic1.Foreground = new SolidColorBrush(Colors.Red);
-                _mainWindow.temperature1.Foreground = new SolidColorBrush(Colors.Red);
+
+                _mainWindow.pulseRate1.Foreground = changeColor;
+                _mainWindow.breathingRate1.Foreground = changeColor;
+                _mainWindow.systolic1.Foreground = changeColor;
+                _mainWindow.diastolic1.Foreground = changeColor;
+                _mainWindow.temperature1.Foreground = changeColor;
             }
             _mainWindow.soundMutableAlarm1();
         }
         void soundMutableAlarm2(object sender, EventArgs e)
         {
+            var changeColor = new SolidColorBrush(Colors.Red);
             if (alarmActivated2 == false)
             {
                 int mute = 3;
                 addStartOfAlarm(mute);
                 alarmActivated2 = true;
-               
-                _mainWindow.pulseRate2.Foreground = new SolidColorBrush(Colors.Red);
-                _mainWindow.breathingRate2.Foreground = new SolidColorBrush(Colors.Red);
-                _mainWindow.systolic2.Foreground = new SolidColorBrush(Colors.Red);
-                _mainWindow.diastolic2.Foreground = new SolidColorBrush(Colors.Red);
-                _mainWindow.temperature2.Foreground = new SolidColorBrush(Colors.Red);
+
+                _mainWindow.pulseRate2.Foreground = changeColor;
+                _mainWindow.breathingRate2.Foreground = changeColor;
+                _mainWindow.systolic2.Foreground = changeColor;
+                _mainWindow.diastolic2.Foreground = changeColor;
+                _mainWindow.temperature2.Foreground = changeColor;
             }
             _mainWindow.soundMutableAlarm2();
         }
         void soundMutableAlarm3(object sender, EventArgs e)
         {
+            var changeColor = new SolidColorBrush(Colors.Red);
             if (alarmActivated3 == false)
             {
                 int mute = 4;
                 addStartOfAlarm(mute);
                 alarmActivated3 = true;
-                
-                _mainWindow.pulseRate3.Foreground = new SolidColorBrush(Colors.Red);
-                _mainWindow.breathingRate3.Foreground = new SolidColorBrush(Colors.Red);
-                _mainWindow.systolic3.Foreground = new SolidColorBrush(Colors.Red);
-                _mainWindow.diastolic3.Foreground = new SolidColorBrush(Colors.Red);
-                _mainWindow.temperature3.Foreground = new SolidColorBrush(Colors.Red);
+
+                _mainWindow.pulseRate3.Foreground = changeColor;
+                _mainWindow.breathingRate3.Foreground = changeColor;
+                _mainWindow.systolic3.Foreground = changeColor;
+                _mainWindow.diastolic3.Foreground = changeColor;
+                _mainWindow.temperature3.Foreground = changeColor;
             }
             _mainWindow.soundMutableAlarm3();
         }
         void soundMutableAlarm4(object sender, EventArgs e)
         {
+            var changeColor = new SolidColorBrush(Colors.Red);
             if (alarmActivated4 == false)
             {
                 int mute = 5;
                 addStartOfAlarm(mute);
                 alarmActivated4 = true;
-                
-                _mainWindow.pulseRate4.Foreground = new SolidColorBrush(Colors.Red);
-                _mainWindow.breathingRate4.Foreground = new SolidColorBrush(Colors.Red);
-                _mainWindow.systolic4.Foreground = new SolidColorBrush(Colors.Red);
-                _mainWindow.diastolic4.Foreground = new SolidColorBrush(Colors.Red);
-                _mainWindow.temperature4.Foreground = new SolidColorBrush(Colors.Red);
+
+                _mainWindow.pulseRate4.Foreground = changeColor;
+                _mainWindow.breathingRate4.Foreground = changeColor;
+                _mainWindow.systolic4.Foreground = changeColor;
+                _mainWindow.diastolic4.Foreground = changeColor;
+                _mainWindow.temperature4.Foreground = changeColor;
             }
             _mainWindow.soundMutableAlarm4();
         }
         void soundMutableAlarm5(object sender, EventArgs e)
         {
+            var changeColor = new SolidColorBrush(Colors.Red);
             if (alarmActivated5 == false)
             {
                 int mute = 6;
                 addStartOfAlarm(mute);
                 alarmActivated5 = true;
-                
-                _mainWindow.pulseRate5.Foreground = new SolidColorBrush(Colors.Red);
-                _mainWindow.breathingRate5.Foreground = new SolidColorBrush(Colors.Red);
-                _mainWindow.systolic5.Foreground = new SolidColorBrush(Colors.Red);
-                _mainWindow.diastolic5.Foreground = new SolidColorBrush(Colors.Red);
-                _mainWindow.temperature5.Foreground = new SolidColorBrush(Colors.Red);
+
+                _mainWindow.pulseRate5.Foreground = changeColor;
+                _mainWindow.breathingRate5.Foreground = changeColor;
+                _mainWindow.systolic5.Foreground = changeColor;
+                _mainWindow.diastolic5.Foreground = changeColor;
+                _mainWindow.temperature5.Foreground = changeColor;
             }
             _mainWindow.soundMutableAlarm5();
 
         }
         void soundMutableAlarm6(object sender, EventArgs e)
         {
+            var changeColor = new SolidColorBrush(Colors.Red);
             if (alarmActivated6 == false)
             {
                 int mute = 7;
                 addStartOfAlarm(mute);
                 alarmActivated6 = true;
-                
-                _mainWindow.pulseRate6.Foreground = new SolidColorBrush(Colors.Red);
-                _mainWindow.breathingRate6.Foreground = new SolidColorBrush(Colors.Red);
-                _mainWindow.systolic6.Foreground = new SolidColorBrush(Colors.Red);
-                _mainWindow.diastolic6.Foreground = new SolidColorBrush(Colors.Red);
-                _mainWindow.temperature6.Foreground = new SolidColorBrush(Colors.Red);
+
+                _mainWindow.pulseRate6.Foreground = changeColor;
+                _mainWindow.breathingRate6.Foreground = changeColor;
+                _mainWindow.systolic6.Foreground = changeColor;
+                _mainWindow.diastolic6.Foreground = changeColor;
+                _mainWindow.temperature6.Foreground = changeColor;
             }
             _mainWindow.soundMutableAlarm6();
         }
         void soundMutableAlarm7(object sender, EventArgs e)
         {
+            var changeColor = new SolidColorBrush(Colors.Red);
             if (alarmActivated7 == false)
             {
                 int mute = 8;
                 addStartOfAlarm(mute);
                 alarmActivated7 = true;
-                
-                _mainWindow.pulseRate7.Foreground = new SolidColorBrush(Colors.Red);
-                _mainWindow.breathingRate7.Foreground = new SolidColorBrush(Colors.Red);
-                _mainWindow.systolic7.Foreground = new SolidColorBrush(Colors.Red);
-                _mainWindow.diastolic7.Foreground = new SolidColorBrush(Colors.Red);
-                _mainWindow.temperature7.Foreground = new SolidColorBrush(Colors.Red);
+
+                _mainWindow.pulseRate7.Foreground = changeColor;
+                _mainWindow.breathingRate7.Foreground = changeColor;
+                _mainWindow.systolic7.Foreground = changeColor;
+                _mainWindow.diastolic7.Foreground = changeColor;
+                _mainWindow.temperature7.Foreground = changeColor;
             }
             _mainWindow.soundMutableAlarm7();
         }
-
-
-
     }
 }

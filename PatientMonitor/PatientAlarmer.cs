@@ -165,8 +165,7 @@ namespace PatientMonitor
                 if (TemperatureAlarm4 != null) TemperatureAlarm4(this, null);
                 if (TemperatureAlarm5 != null) TemperatureAlarm5(this, null);
                 if (TemperatureAlarm6 != null) TemperatureAlarm6(this, null);
-                if (TemperatureAlarm7 != null) TemperatureAlarm7(this, null);
-                
+                if (TemperatureAlarm7 != null) TemperatureAlarm7(this, null);               
 			}
 
         }

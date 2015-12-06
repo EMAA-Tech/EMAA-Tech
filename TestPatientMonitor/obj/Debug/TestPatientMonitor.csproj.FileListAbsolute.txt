@@ -74,3 +74,27 @@ C:\Users\adobr\Desktop\Previous versions\EMAA-Tech V1.4\TestPatientMonitor\bin\D
 C:\Users\adobr\Desktop\Previous versions\EMAA-Tech V1.4\TestPatientMonitor\bin\Debug\Moq.xml
 C:\Users\adobr\Desktop\Previous versions\EMAA-Tech V1.4\TestPatientMonitor\bin\Debug\nunit.framework.xml
 C:\Users\adobr\Desktop\Previous versions\EMAA-Tech V1.4\TestPatientMonitor\obj\Debug\TestPatientMonitor.pdb
+C:\Users\adobr\Desktop\Previous versions\EMAA-Tech V1.5\TestPatientMonitor\bin\Debug\database.accdb
+C:\Users\adobr\Desktop\Previous versions\EMAA-Tech V1.5\TestPatientMonitor\bin\Debug\TestPatientMonitor.dll
+C:\Users\adobr\Desktop\Previous versions\EMAA-Tech V1.5\TestPatientMonitor\bin\Debug\TestPatientMonitor.pdb
+C:\Users\adobr\Desktop\Previous versions\EMAA-Tech V1.5\TestPatientMonitor\bin\Debug\Moq.dll
+C:\Users\adobr\Desktop\Previous versions\EMAA-Tech V1.5\TestPatientMonitor\bin\Debug\nunit.framework.dll
+C:\Users\adobr\Desktop\Previous versions\EMAA-Tech V1.5\TestPatientMonitor\bin\Debug\PatientMonitor.exe
+C:\Users\adobr\Desktop\Previous versions\EMAA-Tech V1.5\TestPatientMonitor\bin\Debug\PatientMonitor.pdb
+C:\Users\adobr\Desktop\Previous versions\EMAA-Tech V1.5\TestPatientMonitor\bin\Debug\Moq.xml
+C:\Users\adobr\Desktop\Previous versions\EMAA-Tech V1.5\TestPatientMonitor\bin\Debug\nunit.framework.xml
+C:\Users\adobr\Desktop\Previous versions\EMAA-Tech V1.5\TestPatientMonitor\obj\Debug\TestPatientMonitor.csprojResolveAssemblyReference.cache
+C:\Users\adobr\Desktop\Previous versions\EMAA-Tech V1.5\TestPatientMonitor\obj\Debug\TestPatientMonitor.dll
+C:\Users\adobr\Desktop\Previous versions\EMAA-Tech V1.5\TestPatientMonitor\obj\Debug\TestPatientMonitor.pdb
+C:\Users\Arturs\Desktop\EMAA-Tech V1.5\TestPatientMonitor\bin\Debug\database.accdb
+C:\Users\Arturs\Desktop\EMAA-Tech V1.5\TestPatientMonitor\bin\Debug\TestPatientMonitor.dll
+C:\Users\Arturs\Desktop\EMAA-Tech V1.5\TestPatientMonitor\bin\Debug\TestPatientMonitor.pdb
+C:\Users\Arturs\Desktop\EMAA-Tech V1.5\TestPatientMonitor\bin\Debug\Moq.dll
+C:\Users\Arturs\Desktop\EMAA-Tech V1.5\TestPatientMonitor\bin\Debug\nunit.framework.dll
+C:\Users\Arturs\Desktop\EMAA-Tech V1.5\TestPatientMonitor\bin\Debug\PatientMonitor.exe
+C:\Users\Arturs\Desktop\EMAA-Tech V1.5\TestPatientMonitor\bin\Debug\PatientMonitor.pdb
+C:\Users\Arturs\Desktop\EMAA-Tech V1.5\TestPatientMonitor\bin\Debug\Moq.xml
+C:\Users\Arturs\Desktop\EMAA-Tech V1.5\TestPatientMonitor\bin\Debug\nunit.framework.xml
+C:\Users\Arturs\Desktop\EMAA-Tech V1.5\TestPatientMonitor\obj\Debug\TestPatientMonitor.csprojResolveAssemblyReference.cache
+C:\Users\Arturs\Desktop\EMAA-Tech V1.5\TestPatientMonitor\obj\Debug\TestPatientMonitor.dll
+C:\Users\Arturs\Desktop\EMAA-Tech V1.5\TestPatientMonitor\obj\Debug\TestPatientMonitor.pdb

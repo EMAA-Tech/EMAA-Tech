@@ -8,24 +8,18 @@ using System.Data.OleDb;
 
 namespace PatientMonitor
 {
-    /// <summary>
-    /// Interaction logic for monitoringandalarmdetails.xaml
-    /// </summary>
-    public partial class monitoringandalarmdetails :Window
-    {
-        readonly MainWindow _mainWindow = null;
-        readonly IPatientFactory _patientFactory  = new PatientFactory();
 
+    public partial class CentralMonitoringStation :Window
+    {
+        readonly IPatientFactory _patientFactory  = new PatientFactory();
         PatientAlarmer _alarmer;
-        CheckBox AlarmMuter;
 
         SoundPlayer mutable = new SoundPlayer(PatientMonitor.Properties.Resources.Mutable);
         SoundPlayer nonMutable = new SoundPlayer(PatientMonitor.Properties.Resources.NonMutable);
 
         
-        public monitoringandalarmdetails()
-        {
-           
+        public CentralMonitoringStation()
+        {        
             InitializeComponent();
             setupComponents();
 
@@ -56,13 +50,11 @@ namespace PatientMonitor
         }
 
         void limitsChanged(object sender, EventArgs e)
-        {
-            monitoringandalarmdetails monitor = new monitoringandalarmdetails();
-            
-            if (_alarmer == null)
-            {
-                _alarmer = (PatientAlarmer)_patientFactory.CreateandReturnObj(PatientClassesEnumeration.PatientAlarmer);
-            }
+        {           
+            //if (_alarmer == null)
+            //{
+            //    _alarmer = (PatientAlarmer)_patientFactory.CreateandReturnObj(PatientClassesEnumeration.PatientAlarmer);
+            //}
             _alarmer.PulseRateTester.LowerLimit = heartRateLower.AlarmValue;
             _alarmer.BreathingRateTester.LowerLimit = breathingRateLower.AlarmValue;
             _alarmer.TemperatureTester.LowerLimit = temperatureLower.AlarmValue;
@@ -73,8 +65,7 @@ namespace PatientMonitor
             _alarmer.BreathingRateTester.UpperLimit = breathingRateUpper.AlarmValue;
             _alarmer.TemperatureTester.UpperLimit = temperatureUpper.AlarmValue;
             _alarmer.SystolicBpTester.UpperLimit = systolicUpper.AlarmValue;
-            _alarmer.DiastolicBpTester.UpperLimit = diastolicUpper.AlarmValue;
-            
+            _alarmer.DiastolicBpTester.UpperLimit = diastolicUpper.AlarmValue;            
         }
 
         void setupComponents()
@@ -102,48 +93,15 @@ namespace PatientMonitor
             bedNoTextBox.DataContext = dt;
         }
 
-
-
         private void btnLogOut_Click(object sender, RoutedEventArgs e)
         {
             MessageBoxResult messageBoxResult = System.Windows.MessageBox.Show("Do you really want to log out?", "Log Out Confirmation", System.Windows.MessageBoxButton.YesNo);
             if (messageBoxResult == MessageBoxResult.Yes)
-            {
-                OleDbConnection dataConnection = new OleDbConnection();
-                DataTable checkLastDate = new DataTable();
-                dataConnection.ConnectionString = dataConnection.ConnectionString = (@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=..\..\..\database\\database.accdb");
-                string sql = "SELECT LAST(StaffID)FROM Registration;";
-                OleDbDataAdapter adapt2 = new OleDbDataAdapter(sql, dataConnection);
-                adapt2.Fill(checkLastDate);
-                int checkLast = int.Parse(checkLastDate.Rows[0][0].ToString());
-
-                OleDbConnection deRegistartion = new OleDbConnection();
-                deRegistartion.ConnectionString = deRegistartion.ConnectionString = (@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=..\..\..\database\\database.accdb");
-
-                OleDbCommand command = new OleDbCommand();
-                //command.CommandText = "INSERT INTO Alarm (StopTime) VALUES (@TimeStamp) WHERE NHSNo = " + NHSNo + "";           
-                command.CommandText = "Update Registration SET DeRegistered = @TimeStamp WHERE StaffID = " + checkLast + "";
-                command.Parameters.Add("@Timestamp", OleDbType.Date).Value = DateTime.Now;
-
-                command.Connection = deRegistartion;
-                command.Connection.Open();
-                command.ExecuteNonQuery();
-
-                Application.Current.Shutdown();
+            {               
+                Logout logOutStaff = new Logout();
+                logOutStaff.logOut();
             }
         }
-
-        private void btnSendEMAIL_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("Email sent!");
-        }
-
-        private void btnSendSMS_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("SMS sent!");
-        }
-
-
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {

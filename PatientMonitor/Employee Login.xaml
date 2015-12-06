@@ -22,7 +22,7 @@
         <Label x:Name="label1_Copy2" Content="Password" HorizontalAlignment="Left" Height="25" Margin="453,322,0,0" VerticalAlignment="Top" Width="59"/>
         <TextBox x:Name="txtID" HorizontalAlignment="Left" Height="25" Margin="517,277,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128"/>
 
-        <Button Content="Submit" HorizontalAlignment="Left" Height="23" Margin="712,296,0,0" VerticalAlignment="Top" Width="86" Click="Button_Click"/>
+        <Button Content="Submit" HorizontalAlignment="Left" Height="23" Margin="712,296,0,0" VerticalAlignment="Top" Width="86" Click="Submit_Click"/>
         <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="517,322,0,0" VerticalAlignment="Top" Height="25" Width="128"/>
     </Grid>
 </Window>

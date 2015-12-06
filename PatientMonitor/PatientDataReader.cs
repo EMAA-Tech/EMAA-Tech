@@ -5,26 +5,14 @@ namespace PatientMonitor
 {
     public class PatientDataReader
     {
-        StreamReader dataFile;
-        StreamReader dataFile1;
-        StreamReader dataFile2;
-        StreamReader dataFile3;
-        StreamReader dataFile4;
-        StreamReader dataFile5;
-        StreamReader dataFile6;
-        StreamReader dataFile7;
+        StreamReader dataFile, dataFile1, dataFile2, dataFile3, dataFile4, dataFile5, dataFile6, dataFile7;
 
-
-        /// <summary>
         /// Initializes a new unconnected instance.
-        /// </summary>
         public PatientDataReader()
         {
         }
 
-        /// <summary>
         /// Initializes a new instance of the <see cref="PMS.PatientDataReader"/> class.
-        /// </summary>
         /// <param name="fileName">File name.</param>
         public PatientDataReader(string fileName)
         {

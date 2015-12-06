@@ -1,9 +1,7 @@
 ﻿
 namespace PatientMonitor
 {
-    /// <summary>
     /// Interface definition for patient data
-    /// </summary>
     public interface IPatientData
     {
         float PulseRate { get; }
