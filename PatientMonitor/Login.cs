@@ -7,7 +7,7 @@ namespace PatientMonitor
 {
     class Login
     {
-        public void StaffLogin(string staffID)
+        public void StaffLogin(string staffID, string password)
         {
             Employee_login loginScreen = new Employee_login();
             try
@@ -20,8 +20,7 @@ namespace PatientMonitor
                 adapt.Fill(dt);
                 string Name = dt.Rows[0][0].ToString();
 
-                //if (txtID.Text == Name && passwordBox.Password == "12345")
-                if (staffID == Name)
+                if (staffID == Name && password == "12345")
                 {
                         OleDbCommand Add = new OleDbCommand();
                         Add.CommandText = "INSERT INTO Registration (RegisteredOn, StaffID) VALUES (@Timestamp, @StaffID)";
@@ -35,12 +34,6 @@ namespace PatientMonitor
 
                     CentralMonitoringStation CentralStation = new CentralMonitoringStation();
                     CentralStation.Show();
-                }
-                else
-                {
-                    staffID = string.Empty;
-                    loginScreen.passwordBox.Password = string.Empty;
-                    MessageBox.Show("Wrong StaffID/Password!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
             catch

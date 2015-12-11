@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Arturs\Desktop\EMAA\EMAA-Tech V1.6\PatientMonitor\obj\x86\Debug\
+C:\Users\Arturs\Desktop\EMAA\EMAA-Tech V1.7\PatientMonitor\obj\x86\Debug\
 PatientMonitor
 none
 false
 DEBUG;TRACE
-C:\Users\Arturs\Desktop\EMAA\EMAA-Tech V1.6\PatientMonitor\App.xaml
+C:\Users\Arturs\Desktop\EMAA\EMAA-Tech V1.7\PatientMonitor\App.xaml
 5-794594849
-1-204589249
-271156344780
-20-354787776
+2-1504086567
+28581141167
+201517634633
 Employee login.xaml;MainWindow.xaml;Bedside monitor.xaml;Central station.xaml;UpDown.xaml;
 
-True
+False
 

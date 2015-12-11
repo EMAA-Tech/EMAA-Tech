@@ -51,10 +51,6 @@ namespace PatientMonitor
 
         void limitsChanged(object sender, EventArgs e)
         {           
-            //if (_alarmer == null)
-            //{
-            //    _alarmer = (PatientAlarmer)_patientFactory.CreateandReturnObj(PatientClassesEnumeration.PatientAlarmer);
-            //}
             _alarmer.PulseRateTester.LowerLimit = heartRateLower.AlarmValue;
             _alarmer.BreathingRateTester.LowerLimit = breathingRateLower.AlarmValue;
             _alarmer.TemperatureTester.LowerLimit = temperatureLower.AlarmValue;

@@ -140,14 +140,12 @@ namespace PatientMonitor
 
         private void MuteAlarmbutton_Click(object sender, RoutedEventArgs e)
         {
-            OleDbConnection dataConnection = new OleDbConnection();
             OleDbConnection rectifyAlarmDateTime = new OleDbConnection();
 
             rectifyAlarmDateTime.ConnectionString = rectifyAlarmDateTime.ConnectionString = (@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=..\..\..\database\\database.accdb");
             {
                 DataTable dt = new DataTable();
-                dataConnection.ConnectionString = dataConnection.ConnectionString = (@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=..\..\..\database\\database.accdb");
-                OleDbDataAdapter adapt = new OleDbDataAdapter("select NHSNo from Patient where BedNo = '" + mutePatientSelector.SelectedValue + "'", dataConnection);
+                OleDbDataAdapter adapt = new OleDbDataAdapter("select NHSNo from Patient where BedNo = '" + mutePatientSelector.SelectedValue + "'", rectifyAlarmDateTime);
                 adapt.Fill(dt);
                 int NHSNo = int.Parse(dt.Rows[0][0].ToString());
 

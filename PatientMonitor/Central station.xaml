@@ -10,7 +10,7 @@
     <Grid Height="637.228" Width="1107.065" Background="#FF307E7A">
         <Label Name="lblSent" Height="29" Width="145" FontSize="11" FontFamily="Microsoft Sans Serif" TabIndex="33" Visibility="Hidden" Foreground="White" Background="Red" Margin="534,500,116,32" HorizontalAlignment="Right" VerticalAlignment="Bottom" >MESSAGE SENT</Label>
         <Label Name="label11" Height="22" Width="9" FontSize="11" FontFamily="Microsoft Sans Serif" TabIndex="18"  Margin="76,486,710,53" HorizontalAlignment="Right" VerticalAlignment="Bottom" ></Label>
-        <Label Name="label4" Height="58" Width="265" FontSize="18.667" FontFamily="Microsoft Sans Serif" TabIndex="6" Foreground="Black" Background="White" Margin="0,0,832.065,554.228" HorizontalAlignment="Right" VerticalAlignment="Bottom" >Monitoring and Alarm Details</Label>
+        <Label x:Name="label4" Height="58" Width="265" FontSize="18.667" FontFamily="Microsoft Sans Serif" TabIndex="6" Foreground="Black" Background="White" Margin="0,0,832.065,554.228" HorizontalAlignment="Right" VerticalAlignment="Bottom" Content="Monitoring and Alarm Details" />
         <Button x:Name="btnLogOut" Content="Log Out" HorizontalAlignment="Left" Height="29" Margin="505,511,0,0" VerticalAlignment="Top" Width="111" Click="btnLogOut_Click" />
         <Grid Height="327" Width="446" Margin="30,150,631.065,160.228">
             <my:NumericUpDown HorizontalAlignment="Left" Margin="227,39,0,0" x:Name="heartRateLower" VerticalAlignment="Top" />

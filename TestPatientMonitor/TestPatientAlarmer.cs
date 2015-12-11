@@ -25,7 +25,7 @@ namespace TestMethodPMS
 			patientData.Setup (b => b.BreathingRate).Returns (15f);
 			patientData.Setup (c => c.SystolicBloodPressure).Returns (135f);
 			patientData.Setup (d => d.DiastolicBloodPressure).Returns (85f);
-			patientData.Setup (e => e.Temperature).Returns (38f);
+			patientData.Setup (e => e.Temperature).Returns (37.3f);
 			
 			var pulseRateRateAlarmWasCalled = false;
 			var breathingRateAlarmWasCalled = false;

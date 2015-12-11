@@ -12,9 +12,10 @@ namespace PatientMonitor
         private void Submit_Click(object sender, RoutedEventArgs e)
         {
             string staffID = txtID.Text;
+            string password = passwordBox.Password;
             Login staffLogin = new Login();
 
-            staffLogin.StaffLogin(staffID);
+            staffLogin.StaffLogin(staffID, password);
             this.Close();
         }
     }

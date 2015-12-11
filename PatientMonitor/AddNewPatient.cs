@@ -6,7 +6,7 @@ using System.Windows.Controls;
 namespace PatientMonitor
 {
     class AddNewPatient
-    {
+    { 
         public void addPatient(string BedNo, string Name, string NHSNo,DataGrid patientDataGrid)
         {
             MainWindowInterface centralStation = new MainWindowInterface();

@@ -9,5 +9,6 @@
 //------------------------------------------------------------------------------
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("database.accdb")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("testdatabase.accdb")]
 
 

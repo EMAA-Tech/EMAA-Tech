@@ -1,0 +1,5 @@
+C:\Users\adobr\Desktop\Previous versions\EMAA-Tech V1.6\PatientMonitorTests\bin\Debug\PatientMonitorTests.dll
+C:\Users\adobr\Desktop\Previous versions\EMAA-Tech V1.6\PatientMonitorTests\bin\Debug\PatientMonitorTests.pdb
+C:\Users\adobr\Desktop\Previous versions\EMAA-Tech V1.6\PatientMonitorTests\obj\Debug\PatientMonitorTests.csprojResolveAssemblyReference.cache
+C:\Users\adobr\Desktop\Previous versions\EMAA-Tech V1.6\PatientMonitorTests\obj\Debug\PatientMonitorTests.dll
+C:\Users\adobr\Desktop\Previous versions\EMAA-Tech V1.6\PatientMonitorTests\obj\Debug\PatientMonitorTests.pdb
